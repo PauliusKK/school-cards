@@ -1,0 +1,422 @@
+doctype html
+html(lang='en-US')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        title Predictive Edge
+
+        // START of LINKS
+
+        // Normalize.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+        // BootstrapCSS 3.3.7
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+
+        // START of FONTS
+
+        // Material Design Icons
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+        // END of FONTS
+
+        // Main CSS file
+        link(rel="stylesheet", href="styles/main.css")
+
+        // END of LINKS
+
+    body
+        include mixins/mixins.jade
+
+        section.black-bar
+            h4.predictive-edge-h4 The predictive edge closes in:
+            h2.countdown <span class="days"></span> days <span class="line">|</span> <span class="hours"></span> hours <span class="line">|</span> <span class="minutes"></span> min <span class="line">|</span> <span class="seconds"></span> sec
+
+        section.introduction.predictive-edge
+            img.background(src="images/predictive-edge/background.png", alt="")
+
+            .heading
+                h3.predictive-edge-h3 A 12-Week Online Workshop Designed to Take You From Good to Great
+                h1.predictive-edge-h1.header-h1 The Predictive Edge
+
+            p.predictive-edge-p.header-p Rapidly Read Your Opponent’s Hand, Perfectly Balance Your Aggression, Learn the Tools to Exploit Any Opponent, and Develop a Consistently Predictive Thought Process
+
+            .video.predictive-edge-video: .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true")
+
+        section.phase.white: .container
+            h2.common-edge-h2.main-reason-h2 The 5 Main Reasons You Are Stuck at Good
+
+            .cards-container
+                +reason("1. When You Start to Move Away from ABC Poker… You Lose", "Good players usually have a good understanding of solid ABC play. They understand position, relative hand strength, and are usually pretty decent at getting value from good hands. However, because they don’t have a fully developed and flexible thought process, they aren’t able to step out of this comfort zone. They find themselves limited to a more traditional form of playing because of the fact that every time they step out they tend to lose. It almost trains them to stick to playing basic, tight-aggressive poker.", "images/predictive-edge/reasons/reason-18.png")
+
+                +reason("2. The Confidence in Your Reads and the Inability to Follow Through", "One of the major issues of good players is that they lack confidence. Sure every once in awhile they will make a great read or take a sick line but this is often very inconsistent, and it’s often with the comfort of pretty decent hands. Confidence does not always come from cards. It comes from knowing exactly where you are in a particular situation and having the ability to trust yourself to take the right course of action. This is something that good players struggle with.", "images/predictive-edge/reasons/reason-17.png")
+
+                +reason("3. Your Off-Table Understanding Doesn't Translate to In-Game Performance", "This is probably the most interesting problem with good players. I call these “Gaps.” Gaps are when a player may be able to narrow an opponent's range or understand the correct line to take if they are given a lot of time and a pen and a paper. There is a gap between what they are capable of in theory and the level at which they can actually perform. And players are usually going to blame their gap issues on...", "images/predictive-edge/reasons/reason-11.png")
+
+                +reason("4. You Blame Way Too Much on Lack of Focus, Patience, Running Bad, or Game Selection", "Most good players are decent enough to not complain about bad beats. But they always have other reasons for their lack of performance. “I am really good I just lose focus after 2 hours,” or  “I play really well, I just run bad and lose and then I start playing poorly.” I hate to break it to you but… if you get affected by those little shifts in the game, it means you lack the ability to see those things coming, and don’t know yourself and your game well enough to hedge and account for those weaknesses. Most players’ higher level mistakes are masked by these types of problems. The number of players I have worked with who told me their only issue is tilt is absolutely insane. Tilt, focus, and attention are often giant masks for an inconsistent and rigid thought process.", "images/predictive-edge/reasons/reason-16.png")
+
+                +reason("5. Your Performance is Too Dependent on Sitting Down With The “Ideal” Type of Player", "Sometimes you might have a session where you crush it and really play great poker. However, if you look closely you are going to find that these moments are often dependent on your opponents. You probably don’t have any issues playing against the really tight opponents or a specific type of aggressive player, but you struggle with players in between. You can probably determine preflop ranges for the players you are used to, but can’t adjust or figure out how to actually beat every table.", "images/predictive-edge/reasons/reason-15.png")
+
+            h2.common-edge-h2.main-reason-second Why Being Good Isn’t Enough in 2017
+            p.common-edge-bigger-p.main-reason-p The quick answer is by the questions you ask.. If you are asking any of the following questions your foundational understanding of the game is… well. broken..
+
+            .cards-container
+                +reason("Good is Everywhere", "I can’t believe I am saying this… but good is now everywhere.  When I started teaching poker, all you needed to be was good. In fact, 10-15 years ago, good was great.  Players were making mistakes at such high frequencies, and their pre-flop games were so poor that it was much easier to make money. In 2016, good has become the average and the average player’s knowledge of the game has increased considerably. Put it this way: At the 2016 WSOP Main Event, in over 5 days of play, I didn’t see a single player limp. Not an exaggeration. In like 50 hours of play not one limp. 15 years ago people were limping left and right, and mistakes were everywhere. Now we need to rise above our opponents by making great reads on them, predicting their actions, and exploiting them to the max.", "images/predictive-edge/reasons/reason-14.png")
+
+                +reason("Being Good is a Waste of Time and Money", "This might feel like a weird thing to say, because at this point it has probably taken you a fair amount of time and money to actually get to good, but it's the truth. The reality is the game has changed over the years and the resources that are available to poker players allow people to get to good quickly. Being good is no longer a significant edge over the field. In a sea of good players, you need to be great to make money.", "images/predictive-edge/reasons/reason-19.png")
+
+                +reason("If You Are Good, You Are Highly Predictable, Exploitable, and Easy to Play Against", "You are good enough to narrow your range and be focused on position. You are good enough to not get out of line. But you are absolutely predictable and you end up folding to players who are great because they can clearly predict your weaknesses and usually your fears. The majority of my exploits come from attacking good players when I can accurately predict they will fold.", "images/predictive-edge/reasons/reason-13.png")
+
+                +reason("Good Play is Boring", "You check the first card it's an ace, you get hit with that little excitement hoping the next card is going to be a face card and then you see a 3 and you get disappointed and fold. Good players know how to narrow their ranges, but they are more focused on their cards than actually playing poker. Great players are constantly looking for weaknesses in their opponents and figuring out how to exploit them. Waiting for cards is boring. Playing poker shouldn't be.", "images/predictive-edge/reasons/reason-12.png")
+
+
+        section.pitch: .container
+            h3 If you are tired of playing “Good” poker and want to make the change to “Great” poker, I have the solution.
+            h5 A 12 Week Fully Guided Online Course Designed to Elevate Your Game from GOOD to GREAT
+            .video: .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true")
+
+        section.phase.white: .container
+            h5 Phase 1 (Weeks 1 - 5)
+            h2.common-edge-h2 Improving the Speed and Accuracy of Your Reads
+            p.common-edge-bigger-p If the goal is to get you to play higher level poker, we need to start with significantly improving the speed and accuracy of your reads. So many poker players consider odds and a solid understanding of math to be the foundational elements of poker and there really is no disputing that, but if we are talking about building a higher level thought process at the table, our foundation is going to be our ability to quickly assess our opponents and narrow their range. Most players lack one or the other, or both. They are either fast and operating off of instinct that is often incorrect, or they need too much time to actually narrow their opponent’s range. We will spend an entire month improving your ability to do this using several methods listed below.
+
+            .cards-container
+                +phase-card("Rapid Range Construction: How to Practically Construct a Range", "The concept of putting a player on a range is no longer a new term. While it’s standard advice that you need to be able to put your opponents on a range of hands, most players have fundamental flaws in the way they perceive, build, and modify their opponent’s range. We will show you how to practically construct a range and exactly what you need to think about and why, and we will reinforce this with hundreds of guided video walkthroughs.", "images/phases/predictive-edge/edge-26.png")
+
+                +phase-card("Course Correction: How to Adjust Player Ranges in Real Time", "Ever get into that spot where your opponent turns over 74os and your beautifully constructed concept of their range is completely shattered? Players have a difficult time adjusting their opponent’s range in real time. I will show you how to make real-time adjustments within the realm of reality by exposing you to dozens of examples of when our opponents get completely out of line and how you should adjust to that.", "images/phases/predictive-edge/edge-25.png")
+
+                +phase-card("Einstein’s Edge: The Hand Reading Memory Method", "One of the big problems with understanding your opponents is remembering all the action that connects to their hand range. At the table there are so many different actions that are happening at once, it is difficult to always remember and track the action. We will teach and reinforce a simple but highly effective memory tool that can be used to significantly increase the recall of your opponent's actions and hands.", "images/phases/predictive-edge/edge-12.png")
+
+                +phase-card("TAG/LAG 2.0: Enhancing Our Understanding of Player Taxonomies", "It’s been over 20 years since the terms TAG and LAG came into the poker education sphere. The same paradigm has been used to describe the way players play preflop. It’s old, it’s outdated, and it doesn’t give you a deeper understanding of how to actually exploit players at the table. We will work on establishing a much more robust method for classifying and playing against certain player types.", "images/phases/predictive-edge/edge-13.png")
+
+                +phase-card("Range Fluency: Mastering the Language of Ranges", "When playing poker your thought process is the foundation for your decisions. Internally, you have your own language that you are using to process the information at the table. The average, good poker player uses a language, but isn’t fluent in it. By becoming fluent in how you think you can be massively more efficient and quicker at the table. We will work on fine tuning your language so that you can process more in shorter periods of time.", "images/phases/predictive-edge/edge-14.png")
+
+                +phase-card("Understanding the Deeper Psychology of Opponent Ranges", "Sure the guy raised twice and folded, but what is the underlying reason for why that player did that? Exploring a player's inner psychology is one of the most effective ways for learning how to exploit them. “Why” reading will allow you to see where a player is coming from and the necessary steps required in order to outplay them.", "images/phases/predictive-edge/edge-15.png")
+
+                +phase-card("The Range Matrix and Understanding Player Profiles", "Poker education and trends in human behavior can often come together and make specific types of players that approach the game in a similar way. We will explore how understanding a range matrix and player profiles can allow us to have a predetermined understanding of how a player approaches the game and how best to exploit them.", "images/phases/predictive-edge/edge-16.png")
+
+                +phase-card("The Arrow Method: A Systematic Approach to Building Your Opponent Ranges", "Once we improve your ability to narrow a range and hand read we need to create a simple construct to make sure that you are consistently doing this at the table. That is what the arrow method is designed to do. It is a highly effective system for interpreting and distilling information at the poker table, and it is the culmination of everything we will talk about in our first month.", "images/phases/predictive-edge/edge-17.png")
+
+        section.develop.red
+
+            .container
+                    h5 Phase 2 (Weeks 6 - 10)
+                    h2 Taking the Line Less Traveled, Balancing Your Aggression, Establishing a Predictive Thought Process, & Determining Your Opponent’s “Why”
+                    p In our second month we are going to be focusing on getting you to break the shackles and start to establish creativity and a predictive thought process at the poker table. I will show you how taking radically different lines than you are used to can make a huge difference in your profits. I will also give you the skills, techniques, and languages to break down and exploit your opponents at much deeper levels than you are used to. In Month 1 we learn how to read our opponents. In Month 2, we will learn how to manipulate them at every level. We will also focus on systemizing your thoughts about your opponent's range so you can spend more time thinking about what your opponents are likely to do with that range of hands.
+
+            img.predictive-edge-bg(src="images/predictive-edge/develop-background.png", alt="")
+
+
+        section.phase.white: .container
+            .heading-text: h2 What we cover in Phase 2 <span>(weeks 3 & 4 & 5)</span>
+
+            .cards-container
+                +phase-card("The Most Effective (Immediate) vs. The Most Valuable (Long Term) Lines", "Whenever you take a particular line in poker it has an outcome. However, there is a big difference between the most effective outcome and the most valuable outcome. Players often take lines that are deemed to be “the right way to play the hand.” While these lines are more valuable over time sometimes you can take a more immediate approach to reduce the variance associated with taking a specific line. Learning this distinction can give you more control over the outcome of your hand and is essential to playing a style that works for you.", "images/phases/predictive-edge/edge-18.png")
+
+                +phase-card("How to Measure Your Acceptable Margin of Error", "In poker you are going to be wrong. It’s not possible to be right 100% of the time. One of the ways to stop beating yourself up, is to really understand what acceptable margin of error you are comfortable with. This is a player-specific choice but once you are able to know how much being wrong is acceptable it makes processing decisions and reviewing your mistakes much easier. I will take you through a process so you can specifically determine your acceptable margin of error at table.", "images/phases/predictive-edge/edge-19.png")
+
+                +phase-card("The Deadly 7: Alternate Lines Based on Predetermined Player Psychology and Profiles", "While every player is different, you will notice similarities in groups of players, which allow us to create profiles. However, once you have the profile and you understand your opponent, what do you actually do with that information? We start with the Deadly 7: Seven outside-the-box, alternative lines that you can take to exploit players. The majority of my situational exploits come from utilizing just two of the seven lines I will discuss.", "images/phases/predictive-edge/edge-20.png")
+
+                +phase-card("Stopping the Bull: Dealing with Mindless Aggressive Players", "Ever play with that player that seems to be an absolute nut? They double and triple barrel, they seem to play every hand, and they use a crazy amount of aggression. I call these players bulls. Traditionally the advice against these players is to wait… Wait for a strong hand and get value. However, there are tons of other ways to deal with this kind of player and once you learn exactly how, they can be incredible sources of value.", "images/phases/predictive-edge/edge-24.png")
+
+                +phase-card("The Crystal Ball: Establishing Consistent Multi-Street Thinking", "At the core of the predictive thought process is the ability to think along multiple streets. Meaning instead of thinking about what your opponent is going to do preflop, you are thinking about how they are likely to react to certain boards or certain actions on the flop. We will spend most of month two developing your ability to see the actions your opponents are likely to take on multiple streets.", "images/phases/predictive-edge/edge-28.png")
+
+                +phase-card("Rationality Testing: How to Determine Just How Rational Your Nutty Players ARE", "Ever sit down with a really random player who just seems a bit confusing, and you can’t seem to figure out the logic behind their decisions? Well there are specific ways of figuring out just how rational they are at the table and specific methods for making a considerable amount of money against these players. These methods have nothing to do with narrowing your range - what you will learn is quite the opposite.", "images/phases/predictive-edge/edge-21.png")
+
+                +phase-card("No Cards, No Problem: Bluffing, Exploiting and Identifying Weaknesses on Any Street", "If we are going to work on building a predictive thought process we are definitely going to work on bluffing. Too many players are card-focused, and aren’t able to see the situations where they can get the most value. Properly timing and executing your bluff is one of the most difficult skills to actually apply. We will strengthen your ability to see situations where it's perfect to bluff and discuss exactly how you can execute that bluff.", "images/phases/predictive-edge/edge-22.png")
+
+                +phase-card("The Value Tree and Branch Analysis: Understanding and Assessing the Path to the Most Value", "Sometimes it difficult to actually understand in the moment which line could have made you more money. This is a skill that you need to build by assessing the situation in a systematic fashion. Our value tree exercise is a highly effective way of understanding what actions could have gotten you the most value. And the more of these you do, the quicker you will be at choosing the right line when you play.", "images/phases/predictive-edge/edge-23.png")
+
+        section.develop.black.predictive-edge: .container
+            h5 Phase 3 - Weeks 6 and 7
+            h2 Creating, Testing, and Establishing Your Own Approach
+            p One of the biggest problems with poker players is something that I call a “poker sense of self.” Players buy every single book, watch every video they can find. They are always searching for “the answer.” I am a big fan of self development and believe you should always work on your game. However, you need to establish a powerful confidence and belief in your own game. This is an absolutely essential aspect to playing great poker. You need to really believe that you are taking the correct line, making the right bet size, and playing the game the best that you can. Our third month is about strengthening your abilities and building your own systematic approach so you are comfortable, proud, and sure of the way you approach and play the game of poker. It may sound a little bit big picture, but it’s an absolutely essential part of a well-rounded game and it’s something that many players lack. We are also doing this so we can learn to see and attack these same weaknesses in our opponents.
+            p The third month is also about establishing plans for going forward. I want to help you build really solid and high-functioning habits. I also want you to understand your limits. Most players have no idea what their actual limits are at the table. How long they should play, when they should play, what types of foods they should eat, etc. In our final month we will get you to really knowing yourself as a poker player. And reinforce everything we learned in the first 3 months. The last month is where I expect everything to really start to click and come together.
+
+        section.phase.white: .container
+            .heading-text: h2 What we cover in Phase 3 <span>(weeks 11 + 12)</span>
+
+            .cards-container
+                +phase-card("The 7-Point Hand Review System: How to Fully Break Down and Review a Hand", "The way players share, review, and ask for hand advice is chaotic at best. Everyday poker players probably ask for advice for tens of thousands of hands. They post a hand, ask a friend, get feedback and go back to their game. Then they repeat the same process all over again. One of the most valuable skillsets is to be able to critically examine your hand. We will teach you a 7-point hand reviewal system that you can use to systematically review hands to see if you played them correctly. This is a tool you will use throughout the rest of your poker career.", "images/phases/predictive-edge/edge-2.png")
+
+                +phase-card("The Gut Check: How to Determine if You Should Trust Your Instincts", "After drilling, playing, and thinking about poker for so long you are going to start to develop an instinct. Maybe you will be in a spot and then all of a sudden think to yourself “something is wrong - I think he has it.” So many players talk about making a gut read, but how do you know can trust it? We have created a simple tool and process to help you determine if you are operating off gut instinct or if “you just want to see if he had it.” It's important to separate logic from emotion at the table, and we will teach you exactly how to do that.", "images/phases/predictive-edge/edge-27.png")
+
+                +phase-card("The Perfect Session - The A Game & The Playing Well Test", "Players always struggle with that question. Am I playing well? Without a systematic approach it’s very difficult to actually understand if you are playing well or not. However, there are ways to test your thought process in real time and make sure you are actually making the right decisions at the table - it just involves asking yourself a series of questions in an ordered fashion. This is a very effective tool and something that will really help you know exactly when you should get up from the table.", "images/phases/predictive-edge/edge-3.png")
+
+                +phase-card("Getting in Their Head: The Most Useful Exercise I Have Ever Created", "The getting in their head exercise is by far my favorite and in my opinion the most useful exercise any live player can do. During this exercise you will get to see what a player has at the table and have to reverse engineer why they are taking the specific course of action that they took. It allows you to source the various reasons for your opponents why, and most importantly it allows you to see that players often have differents reasons for taking specific lines at the table.", "images/phases/predictive-edge/edge-4.png")
+
+                +phase-card("The Sprint Method: Varying Cognitive Focus at the Table", "Poker is a game that obviously requires focus. However, most humans are not necessarily good at focusing for 12-hour sessions. Which is why I created The Sprint Method. It’s a method of playing poker that requires you to be hyper focused and then take breaks in the middle of your actual session. It’s highly effective and it’s the exact method I used to play high performance poker for 14-hour days at the WSOP.", "images/phases/predictive-edge/edge-5.png")
+
+                +phase-card("Trend Assessment - The Difference in Trends at Every Stake", "Trends are an important aspect of poker and one of the most interesting things is that there are different trends at different stakes. For example, 1/2 plays a lot different then 25/50. I will discuss the differences in play at each level and give you specific tips so you know what to expect at every level of the game.", "images/phases/predictive-edge/edge-6.png")
+
+                +phase-card("Thought Engineering: Reverse Engineer Player’s Thoughts by Determining What They Have", "When you sit down at the table most players aren’t operating from a pure sense of rationality. They aren’t thinking exactly the way you are and they have completely different motivations at the table. In our thought engineering exercise we will reverse player's actions into thoughts in order to better understand them and the path to extract maximum value.", "images/phases/predictive-edge/edge-7.png")
+
+                +phase-card("Final Assessment & Review", "At the end of the 12 week course you will take your final assessment and compare your actual thoughts before and after you have taken this course. This will allow you to see your transformation and give you the evidence that you can actually play higher performance poker. I will also show you how to do a full breakdown and analysis of assessments to show you how to analyze exactly where a player is at.", "images/phases/predictive-edge/edge-8.png")
+
+        section.phase.predictive-edge-work: .container
+            h1 Why the Predictive Edge Will Work
+            p.common-edge-bigger-p This is not typical poker education. This is not just a bunch of videos. This is an extremely specific path to developing a higher-level thought process.
+            .video: .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true")
+
+            .cards-container
+                +phase-card("Imediate Reinforcement", "Every single assignment will have a full video breakdown designed to reinforce a consistent and fluid thought process at the table. In our video breakdowns I will take you systematically through each assignment highlighting various elements so you can determine exactly where you are at.", "images/phases/predictive-edge/edge-9.png")
+
+                +phase-card("Conditional Reinforcement", "Conditional reinforcement means “for time”. Approximately 80% of the assignments that you are going to do will be timed. You will come to know and love these timers that you are going to see throughout this course. Why is everything timed? Because we are trying to improve the efficiency and speed of your thoughts in addition to your accuracy. It’s great if you can get some sick reads on your opponent but you can’t take 5 minutes to do that.", "images/phases/predictive-edge/edge-10.png")
+
+                +phase-card("Gradual Adaptation", "The entire program is geared toward getting you to gradually adapt a thought process. We call this write-say-think because that’s the order in which we do it. Meaning we are first going to be practicing by writing out our thoughts, then we are going to vocalize our thoughts, and finally we are just going think them under specific constraints. You have no idea how valuable this is. Poker requires so much thinking yet players rarely train their ability to consistently think for prolonged periods of time.", "images/phases/predictive-edge/edge-11.png")
+
+                +phase-card("Tracking", "If you can’t measure it, you can’t improve it. Throughout the training you will be using a series of tracking sheets so that you can track where you are and to see what specific areas you need to improve on and dedicate more time to. I am obsessed with tracking and measuring, and in a game of uncertainty we want to get into the habit of trying to control as many variables as we can. One of those variables is measurement.  You will also go through three assessments. At the start, beginning, and middle of the course to prove that we are actually increasing your thought process.", "images/phases/predictive-edge/edge-1.png")
+
+        section.phase.white.predictive-edge-work: .container
+            h1 What You Will be Doing..
+            p.common-edge-bigger-p The quick answer is by the questions you ask.. If you are asking any of the following questions your foundational understanding of the game is… well. broken..
+
+            .cards-container
+                +reason("Narrow the Range of Multiple Player Archetypes", "We aren’t just going to go over theory. By the end of the course you will have gone through hundreds, yes hundreds, of range narrowing exercises on every single type of player in so many different spots.", "images/predictive-edge/reasons/reason-1.png")
+
+                +reason("Fully Break Down and Understand the Mechanics Behind Your Own Range", "Part of understanding your opponents is understanding your own range and the reason why you take specific actions at the table. At several times throughout the course we will do range assessments of our own game. Try to understand why we would take specific actions at the table and what are the core reasons behind our decisions. This exercise will give you a surprising level of insight into your own behavior and the behavior of your opponents.", "images/predictive-edge/reasons/reason-2.png")
+
+                +reason("Go Through Hours of Step by Step Video Hand Breakdowns", "For every exercise there is going to be a breakdown. One of the most effective ways to learn is to reinforce your feedback loops and understand when you did something right or wrong, and most importantly why. Our video breakdowns are highly engaging and will really help you solidify the thought process that is required to play exceptional poker.", "images/predictive-edge/reasons/reason-3.png")
+
+                +reason("Actively Narrow the Range of Live Recorded Games", "We will give you unreleased Beyond Tells footage of real recorded games and our narrow range hand exercises so you can actually practice your ability and see if you are correct or not. Knowing if you were correct when narrowing a range is one of the ways that you will build confidence in your ability to read players.", "images/predictive-edge/reasons/reason-4.png")
+
+                +reason("Hundreds… Yes Hundreds of Drills", "Our assignments and drills are robust, always changing, and designed to improve your thought process from the inside out. You will watch videos, narrow ranges, break down hands, and create value trees. We have multiple modules all designed to reconstruct and improve different aspects of your thought process at the table. Also, every single exercise has an answer key and gives you the ability to see where your thought process was correct or incorrect.", "images/predictive-edge/reasons/reason-5.png")
+
+        section.teaching.predictive-edge: .container
+            .header: h2 Who is Teaching The Cash Game Fix?
+
+            .body
+                img(src="images/placeholder.png", alt="")
+
+                .icons
+                    .icon: img(src="images/icon-espn.png", alt="")
+                    .icon: img(src="images/icon-vice.png", alt="")
+                    .icon: img(src="images/icon-cnn.png", alt="")
+                    .icon: img(src="images/icon-dailyshow.png", alt="")
+                    .icon: img(src="images/icon-allin.png", alt="")
+                    .icon: img(src="images/icon-nbc.png", alt="")
+
+            .footer
+                ul
+                    li Started School of Cards, the first brick and mortar poker school in the country. Where I have personally worked with thousands of players of all skill levels.
+                    li I am the founder of Beyond Tells, home to the largest study ever conducted on poker players and the most robust poker tell training available.
+                    li I run a behavioral research organization called The Nonverbal Group, where we study human behavior and help people become more effective communicators.
+                    li I was an Adjunct Psychology Professor at the City University of New York for 7 years.
+                    li While I don’t play professionally anymore…In 2016, I started playing tournaments. So far have $200,000 in wins. 4th in the 5k WSOP 6max, and ran deep in 2016 Main event.
+
+        section.money-back-red
+            header
+                img(src="images/money-back.png", alt="")
+                h2 30 Day 100% Money Back Guarentee
+                h4.pred-edge If you aren’t satisfied in the first 30 days. You get your money bacl. No questions asked. No Fine Print.
+
+            .body: .container.pred-edge
+                p Listen, let’s be clear here. I can’t guarantee that you are all of a sudden going to turn into the best poker player in the world. Anyone selling you any product that guarantees stuff like that is full of shit.
+                p What I can guarantee is that if you take the training and do the work, Beyond Tells will be the best investment you have ever made in your game. The information you get from reading behavior will significantly elevate your skills, allowing you to pay for the product so many times over. I am so confident in what I am offering because I have personally seen the incredile results experienced by hundreds of players.
+                p And let me say this one last time: there is absolutely NO RISK. If you are not amazed at the quality of Beyond Tells - send us an email at any time time during the first 30 days and I will give you a full refund. No questions asked. No hard feelings.
+
+                h3 Blake Eastman
+                span Creator of the Predictive Edge
+
+
+        section.breakdowns.predictive-edge
+            h2.breakdown-join Join Today and This is What You Get
+
+            .pictures.predictive-edge
+                img.predictive-edge(src="images/predictive-edge/join-today/background.png", alt="")
+
+            .breakdown.first-break
+                h1.breakdown-h1 The Predictive Edge Includes the Following:
+
+                .side.text
+                    ul Improving the Speed and Accuracy of Your Reads
+                        +sale-li("Rapid Range Construction: How to Practically Construct a Range", "Learn how to practically construct a range and exactly what you need to think about and why, and we will reinforce this with hundreds of guided video walkthroughs.")
+                        +sale-li("Course Correction: How to Adjust Player Ranges in Real Time", "How to make real-time adjustments within the realm of reality by exposing you to dozens of examples of when our opponents get completely out of line and how you should adjust to that.")
+                        +sale-li("Einstein’s Edge: The Hand Reading Memory Method", "We will teach and reinforce a simple but highly effective memory tool that can be used to significantly increase the recall of your opponent's actions and hands.")
+                        +sale-li("TAG/LAG 2.0: Enhancing Our Understanding of Player Taxonomies", "We will work on establishing a much more robust method for classifying and playing against certain player types.")
+                        +sale-li("Range Fluency: Mastering the Language of Ranges:", "We will fine tune your language so that you can process more in shorter periods of time.")
+                        +sale-li("The Range Matrix and Understanding Player Profiles", "We will fine tune your language so that you can process more in shorter periods of time.")
+                        +sale-li("“Why” Reading: Understanding the Deeper Psychology of Opponent Ranges:", "“Why” reading will allow you to see where a player is coming from and take the necessary steps required to outplay them.")
+                        +sale-li("The Arrow Method: A Systematic Approach to Building Your Opponent Ranges", "The Arrow Method allows us to create a simple construct to make sure that you are consistently implementing your strengthened skillset to narrow a range and hand read at the table.")
+
+                    ul Taking the Line Less Traveled, Balancing Your Aggression, Establishing a Predictive Thought Process, & Determining Your Opponent’s “Why”
+                        +sale-li("The Most Effective (Immediate) vs. The Most Valuable (Long Term)", "Lines Learning the difference between the most effective and the most valuable outcome can give you more control over the outcome of your hand and is essential to playing a style that works for you.")
+                        +sale-li("The Deadly 7: Alternate Lines Based on Predetermined Player Psychology", "The majority of my situational exploits come from utilizing just two of the seven lines I will discuss.")
+                        +sale-li("Stopping the Bull: Dealing with Mindless Aggressive Players", "Out of the box techniques to deal with aggressive “bull” players and once you learn exactly how to use them, they can be incredible sources of value.")
+                        +sale-li("The Crystal Ball: Establishing Consistent Multi-Street Thinking:", "We will spend most of Phase 2 developing your ability to see the actions that your opponents are likely to take on multiple streets.")
+                        +sale-li("Rationality Testing: How to Determine Just How Rational Your Nutty Players ARE:", "Discover specific methods to determine just how rational players are at the table and specific tactics you can implement for making a considerable amount of money against these players.")
+                        +sale-li("No Cards, No Problem: Bluffing, Exploiting and Identifying Weaknesses on Any Street:", "We will strengthen your ability to see situations where it's perfect to bluff and discuss exactly how you can execute that bluff.")
+                        +sale-li("The Value Tree and Branch Analysis: Understanding and Assessing the Path to the Most Value:", "Our value tree exercise is a highly effective way of understanding what actioans could have gotten you the most value - and how to quickly take the correct action in the future.")
+                        +sale-li("Predictive Comparison: Dozens of Comparisons Between Predictive and Non-Predictive Thought Processes:", "We will analyze the individual thoughts of players and point out where a predictive thought process is missing and where it can be best used.")
+                        +sale-li("How to Measure Your Acceptable Margin of Error:", "We will take you through a process that will help you specifically determine your acceptable margin of error at table.")
+
+                    ul Creating, Testing, and Establishing Your Own Approach
+                        +sale-li("The 7-Point Hand Review System:", "How to Fully Break Down and Review a Hand Understand our 7-point hand reviewal system that you can use to systematically review hands to see if you played them correctly. This is a tool you will use throughout the rest of your poker career.")
+                        +sale-li("The Gut Check: How to Determine If You Should Trust Your Instincts:", "We will share our simple tool and process to help you determine if you are operating off gut instinct or if you “just want to see if he had it.”")
+                        +sale-li("The Perfect Session - The A Game & The Playing Well Test:", "Gain a systematic and personal-test approach to understand if you are playing well or not. Use this to know exactly when you should get up from the table.")
+                        +sale-li("Getting in Their Head: The Most Useful Exercise I Have Ever Created:", "Practice my favorite and most useful exercise that any live player can do...")
+                        +sale-li("The Sprint Method: Varying Cognitive Focus at the Table:", "Learn a method of playing poker that requires you to be hyper focused and then take breaks in the middle of your actual session. It’s highly effective and it’s the exact method I used to play high performance poker for 14-hour days at the WSOP.")
+                        +sale-li("Trend Assessment - The Difference in Trends at Every Stake:", "$1/$2 plays a lot different than $25/$50. I will discuss the differences in play at each level and give you specific tips so you know what to expect at every level of the game.")
+                        +sale-li("How to Establish High-Level Routines at the Poker Table:", "We will teach you how to use the same routines that the highest performers in multiple fields use to achieve maximum performance and focus.")
+                        +sale-li("Thought Engineering: Reverse Engineer Player’s Thoughts by Determining What They Have:", "In our thought engineering exercise we will reverse player's actions into thoughts in order to better understand them and the path to extract maximum value.")
+                        +sale-li("Final Assessment & Review:", "At the end of the 12 week course, you will take your final assessment and compare your thoughts before and after you have taken this course. I will also show you how to do a full breakdown and analysis of assessments to show you how to analyze exactly where a player is at.")
+
+                .side.images
+                    img(src="images/predictive-edge/join-today/include-1.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-2.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-3.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-4.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-5.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-6.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-7.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-8.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-9.png", alt="Includes")
+                    img(src="images/predictive-edge/join-today/include-10.png", alt="Includes")
+
+
+                h1 The Predictive Edge Also Includes:
+                +sale-additional("Hundreds of Assignment", "We have created hundreds of diverse assignments with thousands of questions to reinforce everything that we have spoken about.", "images/breakdowns/fix-image-10.png")
+                +sale-additional("Full Video Breakdowns of Assignments:", "In order to really understand how to think at the table you need to see the specific points where your thinking may have been off. By giving you fully guided video breakdowns of assignments you can see exactly where you are at in each assignment.", "images/breakdowns/fix-image-9.png")
+                +sale-additional("A VIBRANT AND ENGAGING COMMUNITY", "Poker players have always had a sense of community. You’ll be able to talk to your fellow members and discuss your successes and difficulties with the concepts.", "images/breakdowns/fix-image-2.png")
+                +sale-additional("ABILITY TO ASK QUESTIONS UNDER EVERY VIDEO", "If ever you don’t understand a concept you can go right to the Ask Questions section and get clarification. You will also see the questions other have had and find more insights.", "images/breakdowns/fix-image-11.png")
+                +sale-additional("WRITTEN SUMMARIES & PDF’S OF ALL CONTENT", "Every single training video includes an outline of what is taught, so that you can quickly review after watching.", "images/breakdowns/fix-image-1.png")
+                +sale-additional("HIGHEST QUALITY VIDEOS AND ADVANCED FEATURES", "Every single scenario we mention is accompanied by a table animation that allows you to keep track of the action. Every video also includes the ability to speed up or slow down the footage. You can also find an index on every training video that allows you to jump to exactly the topic you’re looking for.", "images/breakdowns/fix-image-13.png")
+
+
+            // BONUS 1
+            +bonus('bonus #1', 'Valued at $999')
+            .breakdown.breakdown-bonus
+
+                .side.bonus-text
+                    h2 16 Hours of Live Games To Breakdown
+                    p.main-p In the Cash Game Fix we will focus on a wide range of concepts and methods for thinking at the table. With 15 hours of live games you can practice everything learned in the cash game system on real ½ and ⅖ games. You will have the ability to know what everyone has at all times so you can test to see if your reads are correct. There is no better way to practice then on real recorded games.
+
+                    strong Live Recorded HD 6-Max Games
+                    p Ability to see all 6 players at all times like you do at the casino when you're sitting down at a poker table.
+
+                    strong Card Check Interface
+                    p Our Card Check interface allows you to quickly identify what players have at any given time so you can practice more efficiently.
+
+                    strong The Ultimate Practice
+                    p You don’t have to set a foot into a casino to practice. You can narrow opponents range, pick off bluffs, and evaluate each player from the comfort of your own home. Something that isn’t available anywhere else.
+
+                    strong Determine How Good You Are At Hand Reading
+                    p Our open game format allows you to fully evaluate your ability to read your opponents. Sit down and narrow your opponents ranges. Determine if you were correct or not instantly. It’s an amazing way to boost your confidence and your ability to read opponents at the table.
+
+                .side.bonus-images
+                    .video: .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true")
+                    img.fix(src="images/predictive-edge/bonus-placeholder.png", alt="")
+                    img.fix(src="images/predictive-edge/bonus-placeholder.png", alt="")
+
+
+            // BONUS 2
+            +bonus('bonus #2', 'Valued at $999')
+            .breakdown.breakdown-bonus
+
+                .side.bonus-text
+                    h2 The Professional Series
+                    p.main-p Playing poker professionally is a dream for so many players. However, if it’s not approached in a systematic and responsible manner it can become a nightmare. Before you play professionally there needs to be several questions answered. Are you good enough? Does your situation make it possible to play poker? Playing poker professionally is for a very small percentage of people. This workshop is designed to see if you are one of them.
+
+                    strong The 10 Key Questions to Answer Before Going Pro
+                    p If we are going to be systematic in our approach to playing poker, we are also going to do the same if we decide to play for a living. Learn the 10 key questions you need to answer before making the decision to play full time.
+
+                    strong Creating Your Professional Roadmap:
+                    p Transitioning to poker full time requires some careful planning. I will show you three roadmaps that lay out exactly how players made a transition to full time play.
+
+                    strong The Professional Bankroll:
+                    p When you play poker for a living, your bankroll isn’t just something theoretical. It’s your life line. It’s how you play the bills. Learn the responsible way to manage your bankroll and all the necessary requirements that are required to play professionally.
+
+                    strong Blake’s Top 5 Value Tips and Tricks:
+                    p Over the years of playing professionally and coaching so many professional players there are certain tips and tricks that make a big difference and add a ton of value. I will go over my 5 most valuable tips and tricks to insure that you are being successful at the table.
+
+                    strong Interviews with Live Professional Grinders:
+                    p Professional poker can seem like a glorious profession but there are realities that most people aren’t aware of. Watch me interview 2 live professional grinders who are currently making between 60-90k a year player poker full time.
+
+                    strong Questions and Answers:
+                    p I will answer a wide range of questions submitted to us and give you the option to ask questions as well at our live workshop.
+
+                .side.bonus-images
+                    img.fix(src="images/predictive-edge/bonus-3.png", alt="")
+                    img.fix(src="images/predictive-edge/bonus-4.png", alt="")
+                    img.fix(src="images/predictive-edge/bonus-5.png", alt="")
+
+
+            .money-back
+                img(src="images/money-back.png", alt="")
+                h1 30 Day 100% Money Back Guarentee
+                p Listen, let’s be clear here. I can’t guarantee that you are all of a sudden going to turn into the best poker player in the world. Anyone selling you any product that guarantees stuff like that is full of shit.
+                p What I can guarantee is that if you take the training and do the work, Beyond Tells will be the best investment you have ever made in your game. The information you get from reading behavior will significantly elevate your skills, allowing you to pay for the product so many times over. I am so confident in what I am offering because I have personally seen the incredile results experienced by hundreds of players.
+                p And let me say this one last time: there is absolutely NO RISK. If you are not amazed at the quality of Beyond Tells - send us an email at any time time during the first 30 days and I will give you a full refund. No questions asked. No hard feelings.
+
+                h3 Blake Eastman
+                span Creator of the Predictive Edge
+
+
+        section.plans.red
+            .container
+
+                h1.heading-main All Plans are for Lifetime Access to All Content
+                p.heading-description Everyone has questions. We have answers. If it’s not below. Please just reach out and let us know if you have any other questions.
+
+                ul.nav.nav-tabs
+                    li.active.red(role="presentation"): a(href="#monthly-payments", aria-controls="monthly-payments", role="tab", data-toggle="tab") Monthly Payments
+
+                    li.red(role="presentation"): a(href="#one-payment", aria-controls="one-payment", role="tab", data-toggle="tab") One Time Payment
+                        span save 20%
+
+                .tab-content
+                    #monthly-payments.red.tab-pane.fade.in.active(role="tabpanel")
+                        .plans-container
+                            include mixins/plans/basic.jade
+                            include mixins/plans/premium.jade
+                            include mixins/plans/premium+.jade
+
+                    #one-payment.red.tab-pane.fade(role="tabpanel")
+                        .plans-container
+                            include mixins/plans/one-basic.jade
+                            include mixins/plans/one-premium.jade
+                            include mixins/plans/one-premium+.jade
+
+
+        section.faq: .container
+            h1.heading-main Frequently Asked Questions
+            p.faq-description These are just some of the things said after the course was completed.
+
+            .questions-container
+                +faq-question("What happens when it ends? Do I lose access to everything?", "No. You will have LIFETIME access to all content once the course is over. You will be able to retake it any time and receive all future course updates and improvements for free.")
+                +faq-question("What if I don’t like the course? Can I get my money back?", "Yes, of course. All of our products offer a full, 30-day money back guarantee. If you don't like the course for any reason you can get a full refund if you are in the 30-day window.")
+                +faq-question("Will I meet other poker players?", "Definitely. We have a full forum where you can discuss strategy, your progress in the course, meet some poker friends and more.")
+                +faq-question("How much time will I have to dedicate each week?", "This is completely up to you. The course is set up to be flexible. You should be watching the videos and completing the assignments each week, but if you can’t dedicate as much time in week 4 as you did in week 1, then you can definitely catch up more slowly. Some people may dedicate 2-3 hours per week, while others may dedicate 5-6. It really depends on how quickly you want to absorb all the material and what your own personal learning style is.")
+                +faq-question("How is the Predictive Edge different from other poker training sites?", "Poker training sites give you lots of information. The problem is that it’s hard to do anything with information when you have no guidance. You can learn poker concepts anywhere, but there are very few places that teach you how to APPLY those concepts. There is virtually no other site that will provide you with assignments that you can directly use in your everyday play, and personal support on top of that. The Predictive Edge is different because you are not anonymous, you’re not just another number in the system.")
+                +faq-question("I’m busy. What if I start to fall behind?", "The course is broken up over 12 weeks, but if life gets in the way and you fall a bit behind don’t worry. Even after the 12 weeks are over, you will have all the videos available to watch, whether you’re catching up on videos you didn’t get to see or you’re refreshing information you’ve already learned. You can also pace the course to do it in 24 weeks. This way you basically just take 2 weeks to do one week of course work.")
+                +faq-question("I’m busy. What if I start to fall behind?", "The course is broken up over 12 weeks, but if life gets in the way and you fall a bit behind don’t worry. Even after the 12 weeks are over, you will have all the videos available to watch, whether you’re catching up on videos you didn’t get to see or you’re refreshing information you’ve already learned. You can also pace the course to do it in 24 weeks. This way you basically just take 2 weeks to do one week of course work.")
+                +faq-question("What if I have questions, will there be people that I can go to?", "We are here to make sure that your questions get answered. If you have any questions about specific content covered in the previous week, you can ask in the sections underneath each assignment. For general questions, we have the Q&A forum. You can also use our internal messaging system to ask us a question directly at any time.")
+                +faq-question("Will I get access to the entire course all at once?", "No, The Predictive Edge is a 12-week workshop. Each week new videos and assignments will be posted. You will be able to access current videos for the week and any previous videos, but videos for future weeks will not be available. At the end of the course, all videos will be available to you for the lifetime of your membership.")
+
+        footer.page-footer
+
+            ul.lower.navigation
+                li: a(href="") Contact Us
+                li: a(href="") Privacy Policy
+                li: a(href="") Disclaimer
+
+
+
+        // jQuery 3.1.1
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        // BootstrapJS 3.3.7
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+
+        // Main JS
+        script(src="js/main.js")
+
+        // timer.js
+        script(src="js/timer.js")
+
+        script(src="https://fast.wistia.com/embed/medias/tvl53d55cn.jsonp" async)
+        script(src="https://fast.wistia.com/assets/external/E-v1.js" async)

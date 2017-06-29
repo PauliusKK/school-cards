@@ -1,0 +1,67 @@
+doctype html
+html(lang='en-US')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        title Test Main
+
+        // START of LINKS
+
+        // Normalize.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+        // BootstrapCSS 3.3.7
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+
+        // START of FONTS
+
+        // Material Design Icons
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+        // END of FONTS
+
+        // Main CSS file
+        link(rel="stylesheet", href="../styles/main.css")
+
+        // END of LINKS
+
+    body.test-page
+        //- include ../mixins/mixins.jade
+        include ../mixins/modals/email-form.jade
+
+        header.test-headers.centered
+            img.hidden-xs(src="../images/small-chip.png", alt="")
+            img.hidden-xs(src="../images/school-of-cards.png", alt="")
+            img.visible-xs(src="../images/small-chip-mobile.png", alt="")
+            img.visible-xs(src="../images/school-of-cards-mobile.png", alt="")
+
+        section.test-main: .container
+            h4 The <strong>poker player</strong> assessment tool
+            h2 How Much Do You Really Understand The Game of Poker?
+            p The average player has little to no understanding of how to actually develop their game and improve.
+
+            .video(style="max-width: 780px; margin: 0 auto; box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.5);")
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+            button.main-button.red(data-toggle="modal", data-target="#email-pop-up"): a(href="", onclick="return false;") Click here to sign up
+            span WATCH THE VIDEO BEFORE CLICKING THIS
+
+
+        // jQuery 3.1.1
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        //- // BootstrapJS 3.3.7
+        //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+
+        // Main JS
+        script(src="../js/main.js")
+
+        script(src="//fast.wistia.com/embed/medias/tvl53d55cn.jsonp" async)
+        script(src="//fast.wistia.com/assets/external/E-v1.js" async)

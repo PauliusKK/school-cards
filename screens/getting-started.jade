@@ -1,0 +1,110 @@
+doctype html
+html(lang='en-US')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        title Getting Started
+
+        // START of LINKS
+
+        // Normalize.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+        // BootstrapCSS 3.3.7
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+
+        // START of FONTS
+
+        // Material Design Icons
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+        // END of FONTS
+
+        // Main CSS file
+        link(rel="stylesheet", href="../styles/main.css")
+
+        // END of LINKS
+
+    body
+        include ../mixins/mixins.jade
+        include ../mixins/navigation.jade
+
+        section.started: .container
+            .video: .wistia-video
+                .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                    .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                        .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+            h3 01. A Different Type of Poker Education
+            p We have an entirely different approach to poker coaching, one that is focused on truly learning about the player before giving advice or recommending a course of action. This strategy has been solidified through over 10 years of coaching thousands of poker players around the world.
+
+            h3 02. Our Most Popular Free Workshops
+            p We have an entirely different approach to poker coaching, one that is focused on truly learning about the player before giving advice or recommending a course of action. This strategy has been solidified through over 10 years of coaching thousands of poker players around the world.
+
+            ul
+                li: a.link(href="") 1. The Cash Game Blind Spots: A 4 Day Workshop Designed to Transform Your Game Bitch
+                li: a.link(href="") 2. The Cash Game Blind Spots: A 4 Day Workshop Designed to Transform Your Game Bitch
+                li: a.link(href="") 3. The Cash Game Blind Spots: A 4 Day Workshop Designed to Transform Your Game Bitch
+                li: a.link(href="") 4. The Cash Game Blind Spots: A 4 Day Workshop Designed to Transform Your Game Bitch
+
+            h3 03. Our Courses
+            p We have an entirely different approach to poker coaching, one that is focused on truly learning about the player before giving advice or recommending a course of action. This strategy has been solidified through over 10 years of coaching thousands of poker players around the world.
+                a.link(href="") Learn more.
+
+            h3 04. More About Us
+            p We started in 2007 as the first brick and mortar school in the country. Since then we have taught thousands of hours of live classes, created hundreds of hours of online content, and have played so much poker we can’t even keep track of it. We have a really unique approach to poker and education. You can learn more about us and our story here
+                a.link(href="") Learn more.
+
+        footer.page-footer
+
+            .social
+                a.icon-social-twitter(href="")
+                a.icon-social-facebook(href="")
+                a.icon-social-instagram(href="")
+                a.icon-social-youtube(href="")
+
+            ul.upper.navigation
+                li: a(href="") Home
+                li: a(href="") About
+                li: a(href="") Getting Started
+                li: a(href="") Blog/content
+                li: a(href="") Strategy Sundays
+                li: a(href="") The 8 Week Course
+                li: a(href="") Login
+
+            ul.lower.navigation
+                li: a(href="") Contact Us
+                li: a(href="") Privacy Policy
+                li: a(href="") Disclaimer
+
+
+        // jQuery 3.1.1
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        //- // BootstrapJS 3.3.7
+        //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+
+        // Jquery Easing
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+
+        // Jquery Color Animation
+        script(src="../js/color-animations.min.js")
+
+        // Transit.JS
+        script(src="../js/transit.min.js")
+
+        // Navigation.JS
+        script(src="../js/navigation.js")
+
+        // Footer Position JS
+        script(src="../js/footer-position.js")
+
+        // Main JS
+        script(src="../js/main.js")
+
+        script(src="//fast.wistia.com/embed/medias/jxv4no0s6w.jsonp" async)
+        script(src="//fast.wistia.com/assets/external/E-v1.js" async)

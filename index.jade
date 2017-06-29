@@ -1,0 +1,553 @@
+doctype html
+html(lang='en-US')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        title Cash Game Fix
+
+        // START of LINKS
+
+        // Normalize.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+        // BootstrapCSS 3.3.7
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+
+        // START of FONTS
+
+        // Material Design Icons
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+        // END of FONTS
+
+        // Main CSS file
+        link(rel="stylesheet", href="styles/main.css")
+
+        // END of LINKS
+
+    body
+        include mixins/mixins.jade
+
+        section.black-bar
+            h4 The cash game fix closes in:
+            h2.countdown <span class="days"></span> days <span class="line">|</span> <span class="hours"></span> hours <span class="line">|</span> <span class="minutes"></span> min <span class="line">|</span> <span class="seconds"></span> sec
+
+        section.introduction
+            img.background(src="images/bitmap.png", alt="")
+
+            .heading
+                h1.header-h1 Cash Game Fix
+                    img.wrench(src="images/poker-wrench.png", alt="")
+                    img.card(src="images/poker-card.png", alt="")
+                    span 2.0
+
+
+            p.header-p A 10 Week Online Course Designed to Plug Your Leaks, Transform Your Game, and Turn You Into a Profitable Poker Player
+
+            .video
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+            .broken-game: .container
+                h2 How do I know if my Cash Game is Broken?
+                p The quick answer is by the questions you ask.. If you are asking any of the following questions your foundational understanding of the game is… well. broken..
+
+                .tips
+                    .dashed-tip.active
+
+                        .box
+                            a(href="") "How much should I typically raise with AK or AQ?"
+                            .dashed-line
+                        .image: img.arrow-right(src="images/arrow-right.png", alt="")
+
+                    .card.active
+                        h4 HERE IS WHY YOUR GAME IS BROKEN:
+                        img(src="images/placeholder.png", alt="")
+                        p Your preflop game is pretty decent, you’re raising or calling at the right times, but then when the board comes you find yourself lost. You call continuation bets and you are comfortable bluffing on the flop or turn, but then the river comes and you don’t always know what to do. If your opponent has been better, you wonder if they have a better hand than you. If you have been betting and your opponent has been calling, you don’t know what a good bluff or value bet would be. Your cash game is broken because you’re not thinking ahead. When you make a decision at any point in the hand, you should have a (flexible) plan for how you will proceed on future streets.
+
+                    +dashed-tip("“I have a difficult time playing with really crazy players”", "images/arrow-right.png")
+                    +dashed-tip("“I constantly question myself at the table“", "images/arrow-right.png")
+                    +dashed-tip("“I keep doubling up or trippling up and then losing it all”", "images/arrow-right.png")
+                    +dashed-tip("“I keep doubling up or trippling up and then losing it all”", "images/arrow-right.png")
+                    +dashed-tip("“I don’t know if I am running bad or just playing bad”", "images/arrow-right.png")
+                    +dashed-tip("“I tend to go on tilt a lot and spew all my winnings or dig myself deeper in the hole.”", "images/arrow-right.png")
+                    +dashed-tip("“I call a lot and then I don’t know what to do post flop.”", "images/arrow-right.png")
+                    +dashed-tip("“I find myself getting to the river and not knowing the right play.”", "images/arrow-right.png")
+                    +dashed-tip("“I get caught bluffing too often”", "images/arrow-right.png")
+                    +dashed-tip("“I have very inconsistent results”", "images/arrow-right.png")
+
+            .black-ad: .container
+                img.arrow-down(src="images/arrow-down.png", alt="")
+                h2 What is The Cash Game Fix<span style="letter-spacing: normal">?</span>
+                p The Cash Game Fix is a carefully constructed, 10 week online video program designed to completely <strong>re-teach you the game of poker</strong> so that you can get rid of your bad habits and build a profitable mindset and approach. We will rebuild your thought process, teach you how to create frameworks for being successful at the poker table, and construct systems that will give you the confidence to make the best strategic decisions. You will gain a deeper understanding of bankroll, decision making, tilt, pot odds, and so much more.
+
+        section.develop.white
+            .container
+                h5 WEEK 1 & 2 — If You Want to Be a Profitable Player, You Need The Following...
+                h2 Establishing a Solid Foundation and a Range Based Thought Process
+                p Considering the fact that the entire game of poker revolves around the process of trying to figure out what your opponents have... That is the skillset we are going to start with.  An opponent's range construction is usually something that comes later in most poker courses, which is something that doesn’t really make a lot of sense. We will work on understanding this crucial aspect of poker from week 1 on.
+
+            .pictures
+                img(src="images/backgrounds/develop-first.png", alt="")
+                .video
+                    .wistia-video
+                        .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                            .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+        section.phase: .container
+            .heading-text: h2 What we cover in Phase 1 <span>(weeks 1 & 2)</span>
+
+            .cards-container
+                +phase-card('The Initial Assessment: A Full 360 Assessment of Your Game', 'One of the most important factors in improvement is knowing where you are and where you want to go. We will do a complete 360 analysis of your game so that you can compare your thought process before and after the training. You will be able see clearly exactly how your game has transformed throughout the 10 week course. This will also be a great time for us to learn more about your game and for you to see exactly where you are at….and most importantly where you are looking to go.', 'images/phases/basic-foundation.png')
+                +phase-card('Establishing a Solid Foundation and a Range Based Thought Process', "The average poker player knows what a range is. However, very few players actually have a range based approach to poker. The entire course, particularly the first two weeks, is dedicated towards getting you to determine a thought process that revolves around actively narrowing your opponent's range throughout a hand. Trust me...the game is much easier to play when you can deduce what your opponents have.", 'images/phases/rangebase.png')
+                +phase-card("How to Speak The Language of Ranges: Combinatorics and the Mathematics of a Range", "When beginner players consider the math involved in poker they usually refer to odds. Most players have no idea how math or more specifically combinatorics can be used to breakdown and express an opponent's range. Its one of the most overlooked aspects of understanding ranges and we will cover it extensively.", 'images/phases/math-combos.png')
+                +phase-card-half("How to Use a Range Calculator and Deeper Understanding of Combinatorics", "The poker boom has created a wealth of tools for analysis, unfortunately most players don’t know how to use the tools to unlock their true potential. We will teach you how to use some of the most powerful range calculators and other tools available to you so that you can use them to critique and improve your game.", 'images/phases/phone.png')
+                +phase-card("Problems Players Run Into When Discussing and Thinking About Ranges", "Discussing ranges at a conceptual level is easy. Practically applying those ranges while you are actually playing is a different story. We will discuss all the real time problems and issues that come up when trying to play against an opponent's range all while developing your ability to more accurately put players on a hands.", "images/phases/range-questions.png")
+                +phase-card("The 5 Learning Tools Required to Improve Your Game", "Many players set out to learn and improve at this game but they waste so much time because their approach is flawed. If we are going to spent the next 10 weeks improving our game, I want to start by showing you how 5 simple learning tactics will help you continually improve during and beyond this course.", "images/phases/learning-tools.png")
+                +phase-card("The WHIB Analysis: The Simple Process that Transformed My Game", "Ever get into a spot where you make a bad call because you weren’t really considering what hands were actually beating you at that moment? The WHIB analysis is a simple method for understanding where you are in a hand, and if used correctly, this one approach can completely change your game. I promise.", "images/phases/whib.png")
+                +phase-card("Why You NEED to Think Like a Professional", "This one is pretty simple. An amateur mindest gets amateur results. Learn exactly how and why you need to treat your game like a business NOW, even if you’re a recreational player.", "images/phases/professional.png")
+                +phase-card("How to Develop a System Based Thought Process", "Poker is a game that requires you to think about a wide range of variables. But what do you think about first? Which variables are the most important? When should you ignore certain things at the table? There are so many questions that come up for players because they aren’t actually thinking in a systematic fashion when they sit down and play. Developing a systematic approach will allow us to process the available information and make the most profitable decision possible over time.", "images/phases/system.png")
+                +phase-card("Learn Why Developing “The Why” is Critical to Success", "Many players set out to learn and improve at this game but they waste so much time because their approach is flawed. If we are going to spent the next 10 weeks improving our game, I want to start by showing you how 5 simple learning tactics will help you continually improve during and beyond this course.", "images/phases/why.png")
+
+        section.develop.yellow
+            .container
+                h5 PHASE 2 - Weeks 3, 4 and 5
+                h2 Master the Fundamentals of Poker and Establish a Rock Solid Foundational Game
+                p Foundations are everything in poker. Before you open your range, before you get to play a more exploitive and creative style; you need to master a solid and foundational game. Most players have such big problems with the fundamentals that they can’t truly improve or grow. We will dedicate 3 weeks towards making sure your foundation is solid. This is a level of dedication and diligence towards mastering the game that most players can not say that they have fostered.
+
+            .pictures
+                img(src="images/backgrounds/develop-yellow.png", alt="")
+                .video
+                    .wistia-video
+                        .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                            .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+
+        section.phase.white: .container
+            .heading-text: h2 What we cover in Phase 2 <span>(weeks 3 & 4 & 5)</span>
+
+            .cards-container
+                +phase-card("How to Leverage a Positional Edge", "Every semi-decent poker player understands the concept of position. Players know they should play in position, but really don’t understand why. We will re-work your understanding of position from the ground up so that you can understand how to take advantage of players who don’t don't have a thorough understanding of positional strategy. When you are done with the course you will not only understand the bigger aspects of position, but your game will reflect a positional edge.", "images/phases/position.png")
+                +phase-card("Spec Hands Specialty", "J9, QT, 79… These hands have a ton of value. The problem is the value is relative to your opponents, your ability to play post flop, stack size, position, etc. Adding speculative hands into your range is essential to a well rounded game. You just need to learn exactly how to think about and recognize the value, which is exactly what we will teach you to do.", "images/phases/spec-hands.png")
+                +phase-card("Reading, Manipulating, and Dissecting The Board", "Most players don’t understand that reading a board is all relative to your opponent's range. Learn exactly how to understand what boards are good/bad and everything in between for you and your opponents range.", "images/phases/board.png")
+                +phase-card("How to Make More Money by Mistake Hunting", "When playing poker you are always trying to capitalize on others mistakes.  Learn how developing a coach's mindset will allow you better identify and profit off your opponents mistakes at the table.", "images/phases/mistake-hunting.png")
+                +phase-card("How to Extract Maximum Value", "Extracting maximum value is one of the most creative processes in poker. Fortunately for us, most players lack the creativity to do this well. You will learn exactly how to understand your opponents and properly time and size your bets. This will allow you to extract the most profit from each and every hand you choose to play.", "images/phases/max-value.png")
+                +phase-card("How to Apply and Integrate Mathematical Components", "Players often have heard of, or understand basic mathematical concepts in poker but consistently use them incorrectly. We will help you understand and actively apply every single mathematical concept you can use at the table. (Pot odds, implied odds, reverse implied odds, calculating outs and equity, ranges, combinatorics, EV Calculations... we will cover it all.)", "images/phases/math.png")
+                +phase-card("The Big Pair’s Discussed and Dissected", "The problems players make with Big Pair’s are extensive. From not getting max value to not understanding the actual equity they have in a hand. Those beautiful Pocket Aces are not going to come around every very often. Learn how to think about the big hands and how to play them to achieve max value.", "images/phases/aa-qq.png")
+                +phase-card("How to Navigate the Ax Dynamic", "Ax hands can get tricky. AK on a A29 board… Not that hard to play. However, what happens when you miss that ace on the flop.. Then what? Learn how to think through the Ax spots so you can understand how to play these hands profitably when you don’t connect with the flop of your dreams.", "images/phases/ax.png")
+                +phase-card("Playing Mid Pairs Profitably", "You are running dead and then.. You finally get a mid pair. You raise. Someone calls and the flop has 2 overs… Now what? Pairs have a ton of value. You need to be able to think through the spot and determine how often you are still ahead.", "images/phases/pocket-pairs.png")
+                +phase-card("Investing in Quality", "It’s incredibly important to make the absolute most of your good hands because they don’t come very often. Become highly skilled at getting the most value out of your premium hands.", "images/phases/invest.png")
+                +phase-card-fluid("Learn to Master the “The First Decision”", "The first decision.. You can call, raise, or fold. It seems simple but we all know how complex that first decision can be. Calling when you shouldn’t, raising when it doesn’t make any sense, and folding hands that actually have a considerable amount of value. We will spend a significant amount of time breaking down and developing a thought process around “The First Decision”.", "images/phases/firstdecision.png")
+
+        section.develop.black
+            .container
+                h5 PHASE 3 - Weeks 6 AND 7
+                h2 Develop an Information Driven and Dynamic Style of Poker
+
+            .pictures
+                img(src="images/backgrounds/develop-black.png", alt="")
+                .video
+                    .wistia-video
+                        .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                            .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+        section.phase.white: .container
+            .heading-text: h2 What we cover in Phase 3 <span>(weeks 6 & 7 & 8)</span>
+
+            .cards-container
+                +phase-card("Bluffing vs. Exploiting", "Spot the difference between bluffing (what most players do), and exploiting (what you will do). You will approach winning with “nothing” holdings in an intelligent and reliable way.", "images/phases/bluffing-vs-exploitation.png")
+                +phase-card("The Hidden Mechanics of Exploitation (The 4 W’s)", "Learn how to identify and exploit the mistakes in your opponent's game. Start bluffing based on concrete information instead of choosing an arbitrary time by learning to identify the What, Who, When, and Why of situational exploitation.", "images/phases/exploitation.png")
+                +phase-card("Why & When You Should Bluff", "Understanding the reason why you’re bluffing is going to bring your game to the next level and greatly increase the numbers of times that your bluffs work. This will elevate your bottom line and allow you to play a much more profitable and unpredictable style of poker.", "images/phases/bluff.png")
+                +phase-card("Size Does Matter", "The size of your bet is going to significantly influence the success or failure of your bluffs. We will help you understand exactly how to size your bets based on the situation.", "images/phases/sizedoesmatter.png")
+                +phase-card("Becoming a “Tricky and Exploitive Player”", "Most players have a value based game with holes in it. Meaning they focus on their cards and getting value but still have foundational mistakes in their thought process. After we create a solid foundation we will discuss how to confuse your opponents by breaking your range into situational exploits and value based plays.", "images/phases/whatdoeshehave.png")
+                +phase-card("The Mathematics of a Bluff", "Bluff’s aren’t just random moments of aggression. There are several factors to consider to determine if your bluff was actually profitable over the long run. Understanding fold equity, range calculations, and learn how to breakdown a hand to determine if your bluff was destined to be successful.", "images/phases/math-of-bluff.png")
+                +phase-card("Establish a Mentality and Style of Adjustment", "Poker is a game of constant adjustments. Different games are filled with different players that warrant a completely different style. Learn to solidify an information driven style of play that is dependent on the amount of information available to you.", "images/phases/adjustment.png")
+                +phase-card("The Assessment Process", "Every time you sit down at the table you are going to encounter different players with different approaches, skill, bankroll, etc. Learn exactly how to quickly identify and assess the table and player dynamics and create a plan of attack.", "images/phases/assessment.png")
+                +phase-card("Predicting Mistakes at Specific Stakes", "If you're not spotting trends and patterns, you're not playing poker. Players can often be categorized and understood if you monitor their baseline school of thought. Learn how trends in game levels can be used to speed up the time in which you identify mistakes in your opponents at any level.", "images/phases/call-wider.png")
+                +phase-card("Crushing the Lunatics", "Everyone has a difficult time playing against crazy and unpredictable players. They make huge mistakes, get paid off and in the moment it is often annoying. However, there are multiple ways of dealing with these type of players. We will discuss the exact method of approach to deal with crazy and unexpected player styles.", "images/phases/crazy-players.png")
+                +phase-card-fluid("Practice Adjusting Against all Player Types", "Adjustment is crucial to your success as a poker player. However, most players don’t have experience adjusting to their opponents. Learn how to play against every type of player with live hand and game breakdowns of hundreds of hands from real life games.", "images/phases/graph.png", "extended")
+
+        section.develop: .container
+            h5 PHASE 4 - Weeks 9 and 10
+            h2 Reinforce, Drill, Establish Positive Feedback Loops and Learn Exactly How to Plan Your Success as a Poker Player
+            p You could memorize every single word that I have said in the course. You could know every single concept. However, until you have practiced an active thought process at the table, it is all theory. Phase 4 is about drilling and making sure your thought process is consistent at the table. We also want you to establish positive feedback loops where you practice hand reading and get immediate validation so that you can build the necessary confidence that is required to play at a higher level.
+
+            .video.alone
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+        section.phase.white: .container
+            .heading-text: h2 What we cover in Phase 4 <span>(weeks 9 & 10)</span>
+
+            .cards-container
+                +phase-card("How to Design Your Development as a Poker Player", "Most poker players fail even before they learn how to play. Their learning process lacks structure and a realistic plan. Learn exactly how to structure the process by which you learn how to play.", "images/phases/poker-dev.png")
+                +phase-card("Poker Plan Case Study Breakdowns", "One of the most effective ways to learn is through a deliberate analysis of the mistakes of others. We will breakdown through and critique 3 different separate poker plans so you can see how yours compares to others.", "images/phases/casestudy.png")
+                +phase-card("Establishing a Realistic and Goal-Driven Bankroll", "Players often have unrealistic ideas about what is possible with their bankrolls and time. Learn how to model your future and understand how measuring key metrics in poker (hourly rate, win rate, mistake threshold’s, etc) can allow you to create realistic results in achievable time frames.", "images/phases/bankroll.png")
+                +phase-card("3 Bet/4 Bet/ 5 Bet Spots Dissected", "If you play poker certain spots are going to repeat themselves. One of those spots are 3bet/4bet and 5bet spot confrontations. We will go through dozens of specific 3bet spots so you can understand exactly what and how you need to be thinking about this common spot in poker.", "images/phases/bets.png")
+                +phase-card("The Tough Turn and River Decisions", "Ever get into that spot where you have the second nuts and are facing a shove against a tight player in a huge pot on the river? We will practice systematically thinking through these spots so that you can be relaxed, focused, and fully aware when you have to do this in real time at the table.", "images/phases/toughriver.png")
+                +phase-card("How to Do a Session Breakdown", "One of the most powerful ways to get better at this game is consistent self-reflection. Learn exactly how to fully breakdown a poker session to determine where you made mistakes and what you can do to guarantee that you don’t make them again.", "images/phases/checklist.png")
+                +phase-card("Dozens of Cbets Dissected", "You raise pre with a decent hand. Flop is a blank and now you are trying to determine what to do. By Phase 4, you would will know exactly how to read board texture, critically think about your opponent's range, and more. But...it's time to practice that level of thinking. In our “Cbets Dissected” chapter we will take you through dozens of spots where you will be required to think through a scenario and apply the logic that we are learning in the course to specific spots.", "images/phases/cbets-dissected.png")
+                +phase-card("Creating Custom Player Profiles", "While every player is different, certain patterns tend tend to arise at the table. Profiling players is a phenomenal method for saving time because it allows you to pre-think through approaches for specific player archetypes. Once you sit down with a player who fits a certain profile you know how to effectively counter their strategy making them much easier to play and profit against.", "images/phases/profiles.png")
+                +phase-card("How to Climb the Levels", "Every player has dreams of moving up in levels. That being said, there is a right and wrong way to do this. And it depends on your current experience and level of understanding of the game. Learn how to play a style that fits your current bankroll and financial situation so that you can make the safe journey from $1/$2 to $5/$10 and beyond!", "images/phases/climbstakes.png")
+                +phase-card("A Comprehensive Question and Answers Session", "Over the 10 weeks of Cash Game Fix, we will answer hundreds of questions, most answered through the training. However, at the end we make custom videos fully answering any other questions our members may have. The FAQ section is always growing and is a fantastic way to improve.", "images/phases/q-a.png")
+                +phase-card("Creating Your Poker Circle", "Poker is intrinsically a solo game but that doesn’t mean you can’t have a team behind you.  Learn how to seek out and find like-minded poker players and establish a poker circle where you can discuss hands and improve together.", "images/phases/poker-group.png")
+                +phase-card("Learn How to Create Your Own Poker Warm Up", "The success or failure of your poker session starts before you even sit down at the table. We will help you create your own Checklist for Readiness before you sit down, so you’re always prepared to play your best possible poker.", "images/phases/warmup.png")
+
+
+        section.poker-education: .container
+            h2.heading-h2 The Most Immersive Experience in Poker Education. How we Change Your Game
+            p.heading-p These are just some of the things said after the course was completed.
+
+            .video
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+            .assignments
+                .row
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+
+                .row
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+                    +assignment('The Assignments', 'High quality, throught proviking, game change. assignments for each chapter.', "images/placeholder.png")
+
+            .review
+                img(src="images/avatar.png", alt="")
+                h3 “I got my MBA from Harvard, and it doesn’t com close to the educational material, presetnation, and platfom of school of cards”
+                span <strong>KEVIN PENGUIN</strong> - CASH FAME FIX PLAYER
+
+
+        section.teaching: .container
+            .header: h2 Who is Teaching The Cash Game Fix?
+
+            .body
+                img(src="images/placeholder.png", alt="")
+
+                .icons
+                    .icon: img(src="images/icon-espn.png", alt="")
+                    .icon: img(src="images/icon-vice.png", alt="")
+                    .icon: img(src="images/icon-cnn.png", alt="")
+                    .icon: img(src="images/icon-dailyshow.png", alt="")
+                    .icon: img(src="images/icon-allin.png", alt="")
+                    .icon: img(src="images/icon-nbc.png", alt="")
+
+            .footer
+                ul
+                    li Started School of Cards, the first brick and mortar poker school in the country. Where I have personally worked with thousands of players of all skill levels.
+                    li I am the founder of Beyond Tells, home to the largest study ever conducted on poker players and the most robust poker tell training available.
+                    li I run a behavioral research organization called The Nonverbal Group, where we study human behavior and help people become more effective communicators.
+                    li I was an Adjunct Psychology Professor at the City University of New York for 7 years.
+                    li While I don’t play professionally anymore…In 2016, I started playing tournaments. So far have $200,000 in wins. 4th in the 5k WSOP 6max, and ran deep in 2016 Main event.
+
+
+        section.develop.black.real: .container
+            h1 Real Players. Real Results. Real Stories
+            p These are just some of the things said after the course was completed. These are just some of the things said after the course was completed.
+
+            .video
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+        section.phase.white: .container
+            .cards-container.players
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+                +player-card("Micheal Johnson", "Plays 1/2 from New York", "“I would not be where i am today <strong>without the Cash Game Fix.</strong> It completely <strong>Changed my game</strong> and the way I approach poker, Very happy for it”")
+
+                +player-card-fluid("How did The Cash Game Fix Improve Your Game?", "Ever since I started coaching poker I have discussed the reason that the word “why” is the most important word in poker. The reality is most players raise, fold, or call with a minimal amount of information driving their decisions. Poker is a game of decisions and behind each decision is a WHY. Understanding and being able to express precisely WHY you chose one decision over another during a hand is the real secret to continual improvement in poker. We will make sure you have solid reasons behind your decisions at the table.", "images/avatar.png")
+                +player-card-fluid("How did The Cash Game Fix Improve Your Game?", "Ever since I started coaching poker I have discussed the reason that the word “why” is the most important word in poker. The reality is most players raise, fold, or call with a minimal amount of information driving their decisions. Poker is a game of decisions and behind each decision is a WHY. Understanding and being able to express precisely WHY you chose one decision over another during a hand is the real secret to continual improvement in poker. We will make sure you have solid reasons behind your decisions at the table.", "images/avatar.png")
+                +player-card-fluid("How did The Cash Game Fix Improve Your Game?", "Ever since I started coaching poker I have discussed the reason that the word “why” is the most important word in poker. The reality is most players raise, fold, or call with a minimal amount of information driving their decisions. Poker is a game of decisions and behind each decision is a WHY. Understanding and being able to express precisely WHY you chose one decision over another during a hand is the real secret to continual improvement in poker. We will make sure you have solid reasons behind your decisions at the table.", "images/avatar.png")
+
+
+        section.facebook-feed: .container
+            h2 Random Love, Chip Porn, and Feedback From Our Facebook Group
+
+            .images-container
+                .image: img(src="images/facebook/facebook-1.png", alt="")
+                .image: img(src="images/facebook/facebook-2.png", alt="")
+                .image: img(src="images/facebook/facebook-3.png", alt="")
+                .image: img(src="images/facebook/facebook-4.png", alt="")
+                .image: img(src="images/facebook/facebook-5.png", alt="")
+                .image: img(src="images/facebook/facebook-6.png", alt="")
+                .image: img(src="images/facebook/facebook-7.png", alt="")
+                .image: img(src="images/facebook/facebook-8.png", alt="")
+                .image: img(src="images/facebook/facebook-9.png", alt="")
+                .image: img(src="images/facebook/facebook-10.png", alt="")
+                .image: img(src="images/facebook/facebook-11.png", alt="")
+                .image: img(src="images/facebook/facebook-12.png", alt="")
+
+
+        section.money-back-red
+            header
+                img(src="images/money-back.png", alt="")
+                h2 30 Day 100% Money Back Guarentee
+                h4 If you aren’t satisfied in the first 30 days. You get your money bacl. No questions asked. No Fine Print.
+
+            .body: .container
+                .video
+                    .wistia-video
+                        .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                            .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+                p Listen, let’s be clear here. I can’t guarantee that you are all of a sudden going to turn into the best poker player in the world. Anyone selling you any product that guarantees stuff like that is full of shit.
+                p What I can guarantee is that if you take the training and do the work, Beyond Tells will be the best investment you have ever made in your game. The information you get from reading behavior will significantly elevate your skills, allowing you to pay for the product so many times over. I am so confident in what I am offering because I have personally seen the incredile results experienced by hundreds of players.
+                p And let me say this one last time: there is absolutely NO RISK. If you are not amazed at the quality of Beyond Tells - send us an email at any time time during the first 30 days and I will give you a full refund. No questions asked. No hard feelings.
+
+                h3 Blake Eastman
+                span Creator of the Cash Game Fix
+
+
+        section.breakdowns
+            h2.breakdown-join Join Today and This is What You Get
+
+            .pictures
+                img(src="images/backgrounds/breakdown.png", alt="")
+                img.front-image(src="images/front-image.png", alt="")
+
+            .breakdown.first-break
+                h1.breakdown-h1 The Cash Game Fix Includes the Following:
+
+                .side.text
+                    ul Over 200+ Specific Hand and Situation Walkthroughs
+                        +sale-li('3Bet, 4Bet, 5Bet Breakdowns:', 'Watch us narrow the range of dozens of opponents when they dial up the aggression and put us to tough decisions.')
+                        +sale-li('Small Pairs and Speculative Hand Reviews:', 'Learn the necessary conditions required to make +EV decisions with hands that are usually considered less likely to win.')
+                        +sale-li('Tough River Decisions Analyzed:', 'We will go over how to deal with those spots where the pots are big and you have have no idea what to do on the river.')
+                        +sale-li('Confusing C-Bets Dissected:', 'Donk bets, sudden aggression, and betting into a large field. Figure out how you can analyze the meaning of a bet on the flop and make an intelligent decision in response.')
+                        +sale-li('Subtle Mistakes Identified:', 'Watch us narrow the range of dozens of opponents when they dial up the aggression and put us to tough decisions.')
+
+                    p.ul-paragraph And dozens of other situations you will commonly encounter at the poker table.
+
+                    ul Lifetime Access to A Fully Thought Out and Developed Curriculum
+                        +sale-li('Multiple Learning Modalities:', 'An immersive learning experience which includes written content, assignments, hand breakdowns, and voice recordings so you can choose the way you learn best.')
+                        +sale-li('Adaptive Systems:', 'Everyone has different goals and intentions. We will teach you how to modify your thought system so that you play the most effective style of poker possible for you.')
+                        li Increase the success and frequency of your bluffs through our <strong>Spots and Players to Exploit System,</strong> where we teach you to identify situations that you can use to your own advantage.
+                        +sale-li('Line Critiques:', 'Full breakdowns of different lines usually will have different outcomes. We discuss the pros and cons of each line and how you can think through your decisions at the table to take better lines.')
+
+                    ul A Mastery of The Fundamentals of Poker Mathematics
+                        +sale-li('Preflop and Post Flop Realities:', 'So many people know the numbers associated with preflop and post flop probabilities, but they don’t understand how to take advantage of that knowledge to make better decisions.')
+                        +sale-li('Range Demystified:', 'We will discuss what the term “hand range” really means, with visuals that will help you understand the difference between a mathematical range and a perceived range and use them correctly.')
+                        +sale-li('An Equity Discussion:', 'We’ll show you the meaning of hand equity, pot equity, and fold equity. Then, we’ll give you the tools to bring them together and create a more accurate picture of your hands.')
+                        +sale-li('The Truth About Implied Odds:', 'Poker players often make decisions based on what they consider to be “implied odds” but they are using the concept completely wrong. Avoid the huge pitfalls that can come along with the concepts of Implied Odds and Reverse Implied Odds.')
+
+                    ul A Fully Custom Guided Experience and the Support of Decades of Experience (Premium Option)
+                        +sale-li('Four Live Walkthroughs and Q&A Sessions with Blake:', 'The Cash Game Fix has quite a few places where you can ask questions, but premium members get the added bonus of being able to ask questions in a live setting.')
+                        +sale-li('BONUS Content and Assignments:', 'Receive access to premium-only videos and assignments that will give you more opportunities to practice what you’ve learned.')
+                        +sale-li('Dedicated Support Email:', 'Premium members will receive access to a dedicated support email address that will be closely monitored in case you have any issues or questions at any time.')
+                        +sale-li('Access to our Private Cash Game Fix Facebook Group:', 'The School of Cards community has always been a great group of people who enjoy helping and interacting with each other. This is the best place to bounce your ideas off others and interact with the The Cash Game Fix staff in real time.')
+
+                .side.images
+                    img(src="images/breakdowns/fix-image-14.png", alt="")
+                    img(src="images/breakdowns/fix-image-3.png", alt="")
+                    img(src="images/breakdowns/fix-image-3.png", alt="")
+                    img(src="images/breakdowns/fix-image-4.png", alt="")
+                    img(src="images/breakdowns/fix-image-5.png", alt="")
+                    img(src="images/breakdowns/fix-image-6.png", alt="")
+                    img(src="images/breakdowns/fix-image-7.png", alt="")
+                    img(src="images/breakdowns/fix-image-8.png", alt="")
+
+
+                h1 The Cash Game Fix Also Includes
+
+                +sale-additional('50+ HOURS OF GAME CHANGING INTERACTIVE VIDEO CONTENT', 'We don’t just get behind a webcam and start talking. All of our content is fully produced 1080p footage that can be downloaded and viewed on every device.', "images/breakdowns/fix-image-10.png")
+
+                +sale-additional('10+ HOURS OF HAND BREAKDOWNS AND GAME BREAKDOWNS', 'Watch us break down hands in real time so you understand how to think at the table through examples taken from real live cash games.', "images/breakdowns/fix-image-9.png")
+
+                +sale-additional('A VIBRANT AND ENGAGING COMMUNITY', 'Poker players have always had a sense of community. You’ll be able to talk to your fellow members and discuss your successes and difficulties with the concepts.', "images/breakdowns/fix-image-2.png")
+
+                +sale-additional('ABILITY TO ASK QUESTIONS UNDER EVERY VIDEO', 'If ever you don’t understand a concept you can go right to the Ask Questions section and get clarification. You will also see the questions other have had and find more insights.', "images/breakdowns/fix-image-11.png")
+
+                +sale-additional('WRITTEN SUMMARIES & PDF’S OF ALL CONTENT', 'Every single training video includes an outline of what is taught, so that you can quickly review after watching.', "images/breakdowns/fix-image-1.png")
+
+                +sale-additional('HIGHEST QUALITY VIDEOS AND ADVANCED FEATURES', 'Every single scenario we mention is accompanied by a table animation that allows you to keep track of the action. Every video also includes the ability to speed up or slow down the footage. You can also find an index on every training video that allows you to jump to exactly the topic you’re looking for.', "images/breakdowns/fix-image-13.png")
+
+
+            // BONUS 1
+            +bonus('bonus #2', 'Valued at $899')
+            .breakdown.breakdown-bonus
+
+                .side.bonus-text
+                    h2 The Live Class Archive
+                    p.main-p In May of 2017, I conducted my last live poker class. I invited students from the Cash Game Fix to come and participate in a live experience where we played on RFID tables and I broke down everything that went on in the game. The live class archive features over 10 hours of live video that will reinforce all of the content in the Cash Game Fix in addition to opening your eyes to a wider range of live dynamics at the table. In the live video archive we will be doing the following:
+
+                    strong Live Breakdowns of School of Cards Players in Real Time!
+                    p Using the RFID tables I will be conducting live breakdowns of play at the table. Highlighting what they did wrong and what key areas they need to improve their game. I will also be pointing out and identifying live tells and behavioral leaks in their game.
+
+                    strong A Full Analysis of Players Mistakes and Fixes
+                    p As we breakdown and address the mistakes players are making in each hand we will be exploring dozens of aspects of poker. Live coaching creates an instant back and forth dialogue that really allows you to work with players games at a deeper level. Through watching these interactions you will gain a full understanding of some of the mistakes and issues you are making at the table as well.
+
+                    strong A Deep Dive into the Exceptions Principle at the Poker Table
+                    p Poker isn’t a game that should be played one way. A player's bankroll, skill, financial situation all contribute to specific styles and approaches. One of the reasons School of Sards has been so successful is because we approach teaching poker from a bigger perspective. Due to this approach there are often dozens of exceptions that arise when learning the game. For example, I might tell one player that it's okay to call out of position in that spot and tell another player that they shouldn’t. The exceptions principle is a powerful concept and you will learn exactly how it's applied as you watch the real time application of this principle.
+
+                    strong The School of Cards Coaching Methodology Applied
+                    p One of the key variables that has always made School of Cards so special is our unique coaching methodology. A lot of organizations teach poker concepts but they don’t help their students fully integrate and apply those concepts. Watch in real time as I remove student blockages and show you exactly how I get the point to stick.
+
+                .side.bonus-images
+                    .video
+                        .wistia-video
+                            .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                                .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                    .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+                    img.fix(src="images/breakdowns/fix-image-12.png", alt="")
+                    img(src="images/placeholder.png", alt="")
+                    img.fix(src="images/breakdowns/fix-image-12.png", alt="")
+
+
+            // BONUS 2
+            +bonus('bonus #1', 'Valued at $999')
+            .breakdown.breakdown-bonus
+
+                .side.bonus-text
+                    h2 Side Income Success
+                    p.main-p When we polled our School of Cards Members, we found that the majority of members didn’t want to be professionals but they wanted to use poker as a stable side income. In Side Income Success we will go over the specific plan that you need in order to understand how you can successfully make poker a side income poker a side income. Most players would like some residual income but don’t actually have a course of action for how to achieve that goal. We will go over how to track specific metrics to figure out how much money you could be making and how.
+
+                    strong The Case Studies
+                    p The Case Studies: Case studies from players who are making an extra $500 - $1,000 a week. We will explore exactly how they do it by completely breaking down their approach, financial situation, and skillset. The case study approach will allow you to determine where you are in the pursuit to make side income and provide a powerful roadmap to get you started.
+
+                    strong The Side Income Checklist
+                    p Checklists are systematic ways for approaching a situation. They are often extremely simple but when utilized, they are very powerful in a game with so much uncertainty.  We will teach you how to master the necessary conditions in order to make a consistent side income with poker.
+
+                    strong Tricks of the Trade
+                    p How to optimize casino rewards, how to identify when the rake is so high making it impossible to profit, how to work on finding the session length that yields the highest rewards and more.
+
+                    strong The Side Income Tool
+                    p Learn how to track your results and determine what you need to hit your goals with our side income spreadsheet.
+
+                .side.bonus-images
+                    .video
+                        .wistia-video
+                            .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                                .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                    .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+                    img.fix(src="images/breakdowns/fix-image-12.png", alt="")
+                    img(src="images/placeholder.png", alt="")
+
+
+            // BONUS 3
+            +bonus('bonus #3', 'Valued at $999')
+            .breakdown.breakdown-bonus
+
+                .side.bonus-text
+                    h2 15 Hours of Live Games To Breakdown
+                    p.main-p In the Cash Game Fix we will focus on a wide range of concepts and methods for thinking at the table. With 15 hours of live games you can practice everything learned in the cash game system on real ½ and ⅖ games. You will have the ability to know what everyone has at all times so you can test to see if your reads are correct. There is no better way to practice then on real recorded games.
+
+                    strong Live Recorded HD 6-Max Games
+                    p Ability to see all 6 players at all times like you do at the casino when you're sitting down at a poker table.
+
+                    strong Card Check Interface
+                    p Our Card Check interface allows you to quickly identify what players have at any given time so you can practice more efficiently.
+
+                    strong The Ultimate Practice
+                    p You don’t have to set a foot into a casino to practice. You can narrow opponents range, pick off bluffs, and evaluate each player from the comfort of your own home. Something that isn’t available anywhere else.
+
+                    strong Determine How Good You Are At Hand Reading
+                    p Our open game format allows you to fully evaluate your ability to read your opponents. Sit down and narrow your opponents ranges. Determine if you were correct or not instantly. It’s an amazing way to boost your confidence and your ability to read opponents at the table.
+
+                .side.bonus-images
+                    .video
+                        .wistia-video
+                            .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                                .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                                    .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+                    img.fix(src="images/breakdowns/fix-image-12.png", alt="")
+                    img(src="images/placeholder.png", alt="")
+
+
+            .money-back
+                img(src="images/money-back.png", alt="")
+                h1 30 Day 100% Money Back Guarentee
+                p Listen, let’s be clear here. I can’t guarantee that you are all of a sudden going to turn into the best poker player in the world. Anyone selling you any product that guarantees stuff like that is full of shit.
+                p What I can guarantee is that if you take the training and do the work, Beyond Tells will be the best investment you have ever made in your game. The information you get from reading behavior will significantly elevate your skills, allowing you to pay for the product so many times over. I am so confident in what I am offering because I have personally seen the incredile results experienced by hundreds of players.
+                p And let me say this one last time: there is absolutely NO RISK. If you are not amazed at the quality of Beyond Tells - send us an email at any time time during the first 30 days and I will give you a full refund. No questions asked. No hard feelings.
+
+                h3 Blake Eastman
+                span Creator of the Cash Game Fix
+
+
+        section.plans.yellow
+            .container
+
+                h1.heading-main All Plans are for Lifetime Access to All Content
+                p.heading-description Everyone has questions. We have answers. If it’s not below. Please just reach out and let us know if you have any other questions.
+
+                ul.nav.nav-tabs
+                    li.active.yellow(role="presentation"): a(href="#monthly-payments", aria-controls="monthly-payments", role="tab", data-toggle="tab") Monthly Payments
+
+                    li.yellow(role="presentation"): a(href="#one-payment", aria-controls="one-payment", role="tab", data-toggle="tab") One Time Payment
+                        span save 20%
+
+                .tab-content
+                    #monthly-payments.yellow.tab-pane.fade.in.active(role="tabpanel")
+                        .plans-container
+                            include mixins/plans/basic.jade
+                            include mixins/plans/premium.jade
+                            include mixins/plans/premium+.jade
+
+                    #one-payment.yellow.tab-pane.fade(role="tabpanel")
+                        .plans-container
+                            include mixins/plans/one-basic.jade
+                            include mixins/plans/one-premium.jade
+                            include mixins/plans/one-premium+.jade
+
+
+        section.faq
+            .container
+
+                h1.heading-main Frequently Asked Questions
+                p.faq-description These are just some of the things said after the course was sompleted.
+
+                .questions-container
+
+                    .question
+                        h4 How much time will I have to dedicate each week?
+                        p This is completely up to you. The course is set up to be flexible. You should be watching the videos and completing the assignments each week, but if you can’t dedicate as much time in week 4 as you did in week 1, then you can definitely catch up more slowly. Some people may dedicate 2-3 hours per week, while others may dedicate 5-6. It really depends on how quickly you want to
+
+                    .question
+                        h4 How much time will I have to dedicate each week?
+                        p This is completely up to you. The course is set up to be flexible. You should be watching the videos and completing the assignments each week, but if you can’t dedicate as much time in week 4 as you did in week 1, then you can definitely catch up more slowly.
+
+                    .question
+                        h4 How much time will I have to dedicate each week?
+                        p This is completely up to you. The course is set up to be flexible. You should be watching the videos and completing the assignments each week, but if you can’t dedicate as much time in week 4 as you did in week 1, then you can definitely catch up more slowly. Some people may dedicate 2-3 hours per week, while others may dedicate 5-6. It really depends on how quickly
+
+                    .question
+                        img(src="images/placeholder.png", alt="")
+                        h4 How much time will I have to dedicate each week?
+                        p This is completely up to you. The course is set up to be flexible. You should be watching the videos and completing the assignments each week, but if you can’t dedicate as much time in week 4 as you did in week 1, then you can definitely catch up more slowly.
+
+
+
+        // jQuery 3.1.1
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        // BootstrapJS 3.3.7
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+
+        // timer.js
+        script(src="js/timer.js")
+
+        // Main JS
+        script(src="js/main.js")
+
+        script(src="https://fast.wistia.com/embed/medias/tvl53d55cn.jsonp" async)
+        script(src="https://fast.wistia.com/assets/external/E-v1.js" async)

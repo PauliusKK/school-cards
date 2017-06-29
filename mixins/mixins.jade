@@ -1,0 +1,109 @@
+mixin plan-table(divClass, text)
+    tr(class=divClass): td
+        p #{text}
+        i.material-icons info
+
+mixin sale-li(strong, normal)
+    li <strong>#{strong}</strong> #{normal}
+
+mixin sale-additional(strong, normal, imgsrc)
+    .additional
+        img(src=imgsrc, alt="")
+
+        .box
+            h3 #{strong}
+            p #{normal}
+
+mixin bonus(left, right)
+    .bonus
+        h3 #{left}
+        h4 #{right}
+
+mixin phase-card(strong, normal, imgsrc)
+    .card
+        - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/phases/graph.png'
+        img(src=imgsrc, alt="")
+        h4 #{strong}
+        p #{normal}
+
+mixin phase-card-half(strong, normal, imgsrc)
+    .card.half
+        - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/phases/graph.png'
+        img(src=imgsrc, alt="")
+        h4 #{strong}
+        p #{normal}
+
+mixin phase-card-fluid(strong, normal, imgsrc, divClass)
+    .card.fluid
+        - divClass = typeof divClass != "undefined" ? divClass : ''
+        - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/phases/graph.png'
+        img(class=divClass, src=imgsrc, alt="")
+        h4 #{strong}
+        p #{normal}
+
+mixin process-advice(strong, normal)
+    .advice
+        i.icon-map
+
+        .box
+            h4 #{strong}
+            p #{normal}
+
+mixin dashed-tip(text, imgsrc)
+    .dashed-tip
+        .box
+            a(href="") #{text}
+            .dashed-line
+        .image: img.arrow-right(src=imgsrc, alt="")
+
+    .card
+        h4 HERE IS WHY YOUR GAME IS BROKEN:
+        img(src="../images/placeholder.png", alt="")
+        p Your preflop game is pretty decent, you’re raising or calling at the right times, but then when the board comes you find yourself lost. You call continuation bets and you are comfortable bluffing on the flop or turn, but then the river comes and you don’t always know what to do. If your opponent has been better, you wonder if they have a better hand than you. If you have been betting and your opponent has been calling, you don’t know what a good bluff or value bet would be. Your cash game is broken because you’re not thinking ahead. When you make a decision at any point in the hand, you should have a (flexible) plan for how you will proceed on future streets.
+
+mixin question-footer(percents)
+    footer
+        p This test takes an average of about 1 minute.
+        .progress
+            .progress-bar(role="progressbar", aria-valuenow=percents, aria-valuemin="0", aria-valuemax="100")
+
+mixin assignment(heading, paragraph, imgsrc)
+    .assignment
+        img(src=imgsrc, alt="")
+        h3 #{heading}
+        p #{paragraph}
+
+mixin player-card(strong, normal, comment)
+    .card.player-card
+        .video: .wistia-video
+            .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                    .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+        h4 #{strong}
+        span #{normal}
+        p!= comment
+
+mixin player-card-fluid(strong, normal, imgsrc)
+    .card.player-card.fluid
+        - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/placeholder.png'
+        img(src=imgsrc, alt="")
+        h4 #{strong}
+        p #{normal}
+
+mixin content-post(classes, text, imgURL)
+    .content-post(onclick="window.location.href = 'https://www.schoolofcards.com/content/not-phil-ivey';" class=classes)
+        - imgURL = typeof imgURL != "undefined" ? imgURL : '../images/placeholder.png'
+        img(src=imgURL, alt="Poker")
+        h2 #{text}
+
+mixin reason(strong, normal, imgsrc)
+    .card.reason
+        - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/predictive-edge/placeholder-gray.png'
+        img(src=imgsrc, alt="")
+        h4 #{strong}
+        p #{normal}
+
+mixin faq-question(strong, normal)
+    .question
+        h4 #{strong}
+        p #{normal}

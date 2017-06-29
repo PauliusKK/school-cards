@@ -1,0 +1,90 @@
+// --------------------------- TEST PAGE --------------------------- \\
+header.test-headers.centered
+    height: 70px
+    background-color: #cd3135
+
+    img
+        display: block
+        margin: 0 auto
+
+// --------------------------- GETTING STARTED PAGE --------------------------- \\
+header.header-started.bigger
+    background-color: #cd3135
+    height: 70px
+    padding-right: 25px
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 3
+
+    img
+        float: left
+        display: inline
+        margin-top: 2px
+
+button.home
+    background-color: transparent
+    color: white
+    float: right
+    top: 35%
+    letter-spacing: 0.85px
+    font-weight: bold
+    font-size: 14px
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    border: none
+    box-shadow: none
+    vertical-align: middle
+    position: relative
+    outline: none
+    position: fixed
+    top: 25px
+    right: 25px
+    z-index: 10
+    padding: 0 40px
+    padding-left: 0
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+    &:hover
+        span:not(.text)
+            background-color: white !important
+
+    span.text
+        position: relative
+        top: 1px
+
+    span:not(.text)
+        display: block
+        position: absolute
+        height: 3px
+        background-color: black
+        opacity: 1
+        width: 30px
+        right: 0
+        float: right
+        top: 0
+        transform: rotate(0deg)
+        transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+        &.opened
+            background-color: #bf3e3e !important
+            top: 8px
+
+        &.hoverActive
+            background-color: #ff5353 !important
+
+    span:nth-child(2)
+        top: 0px
+
+        &.opened
+            transform: rotate(-45deg)
+
+    span:nth-child(3), span:nth-child(4)
+        top: 8px
+
+    span:nth-child(5)
+        top: 16px
+
+        &.opened
+            transform: rotate(45deg)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Main</title>
+    <!-- START of LINKS-->
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <!-- BootstrapCSS 3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- START of FONTS-->
+    <!-- Material Design Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- END of FONTS-->
+    <!-- Main CSS file-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- END of LINKS-->
+  </head>
+  <body class="test-page">
+    <div id="email-pop-up" class="md-modal md-effect-12"><i class="icon-icon-close md-close"></i>
+      <div class="container">
+        <div class="md-content">
+          <h1>You are 10 seconds away from identifying mistakes you never knew you were making</h1>
+          <p>Enter your name and email and we will send you a link to your first video.</p>
+          <form id="form_login" action="#form_login" method="POST">
+            <input type="text" name="uname" value="!{old(uname)}" placeholder="NAME" required>
+            <input type="email" name="email" value="!{old(uname)}" placeholder="E-MAIL" required>
+            <button id="email-pop-up-btn" type="submit" class="main-button light-red"><a>Click here to sign up</a></button><span>No Spam. No Bullshit. Unsubscribe at anytime.</span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="test-headers centered"><img src="../images/small-chip.png" alt="" class="hidden-xs"><img src="../images/school-of-cards.png" alt="" class="hidden-xs"><img src="../images/small-chip-mobile.png" alt="" class="visible-xs"><img src="../images/school-of-cards-mobile.png" alt="" class="visible-xs"></header>
+    <section class="test-main">
+      <div class="container">
+        <h4>The <strong>poker player</strong> assessment tool</h4>
+        <h2>How Much Do You Really Understand The Game of Poker?</h2>
+        <p>The average player has little to no understanding of how to actually develop their game and improve.</p>
+        <div style="max-width: 780px; margin: 0 auto; box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.5);" class="video">
+          <div class="wistia-video">
+            <div style="padding: 56.25% 0 0 0; position: relative;" class="wistia_responsive_padding">
+              <div style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" class="wistia_responsive_wrapper">
+                <div style="height: 100%; width: 100%;" class="wistia_embed wistia_async_jxv4no0s6w seo=false videoFoam=true">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button data-toggle="modal" data-target="#email-pop-up" class="main-button red"><a href="" onclick="return false;">Click here to sign up</a></button><span>WATCH THE VIDEO BEFORE CLICKING THIS</span>
+      </div>
+    </section>
+    <!-- jQuery 3.1.1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Main JS-->
+    <script src="../js/main.js"></script>
+    <script src="//fast.wistia.com/embed/medias/tvl53d55cn.jsonp" async></script>
+    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+  </body>
+</html>
