@@ -1,0 +1,232 @@
+doctype html
+html(lang='en-US')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Our Courses
+
+		// START of LINKS
+
+		// Normalize.css
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+		// BootstrapCSS 3.3.7
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+
+		// START of FONTS
+
+		// Material Design Icons
+		link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+		// Roboto font.
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400")
+
+		// Roboto Mono font.
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400")
+
+		// END of FONTS
+
+		// Main CSS file
+		link(rel="stylesheet", href="../styles/main.css")
+
+		// END of LINKS
+	body
+		include ../mixins/mixins.jade
+		include ../mixins/navigation.jade
+
+		.wrapper
+			.visual-area
+				.left
+					h1 Our Courses
+					p We have designed an entire curriculum for completely transforming your live no limit hold em game. In order to determine what course is right for you. Take our FREE assessment.
+					.visual-button
+						button.main-button.white: a(href="#") TAKE THE POKER ASSESSMENT
+				.img-right
+					picture
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						source(srcset="/images/img01.png, /images/img01-2x.png 2x" media="(max-width: 767px)")
+						source(srcset="/images/img01.png" media="(max-width: 1024px)")
+						source(srcset="/images/img01.png, /images/img01-2x.png 2x")
+						<!--[if IE 9]></video><![endif]-->
+						img(src="img01.png" alt="image description")
+			.tab-area
+				ul.tabset
+					each val, index in [{ title: 'THE CASH GAME FIX', text: 'Beginner - Intermediate' }, { title: 'THE PREDICTIVE EDGE', text: 'Intermediate - Advanced' }, { title: 'BEYOND TELLS', text: 'Advanced' }]
+						li
+							if index == 0
+								a(href="#tab" + (index + 1)).active
+									strong.title= val.title
+									span.txt= val.text
+							else
+								a(href="#tab" + (index + 1))
+									strong.title= val.title
+									span.txt= val.text
+				.tab-content
+					.twocolumns#tab1
+						.holder
+							article.content-block
+								h2 THE CASH GAME FIX SUMMARY
+								p
+									|The Cash Game Fix is a carefully constructed, 10 week online video program designed to completely re-teach you the game of poker so that you can get rid of your bad habits and build a profitable mindset and approach. We will rebuild your thought process, teach you how to create frameworks for being successful at the poker table, and construct systems that will give you the confidence to make the best strategic decisions. You will gain a deeper understanding of bankroll, decision making, tilt, pot odds, and so much more.
+								h2 WHO IS THIS CLASS DESIGNED FOR?
+								ol
+									li
+										| If you are a beginning or intermediate level player who wants to be a consistent winner in today’s tough poker games than The Cash Game Fix is for you.
+									li
+										| If you are just starting to study the game, and want to gain a solid fundamental understanding of the core concepts necessary to win, than The Cash Game Fix is for you.
+									li
+										| If you feel that there are parts of your game that need improvement but are uncertain how to go about fixing them than The cash Game Fix is for you.
+									li
+										| If you want to better understand the basic underlying mathematical concepts that apply in today’s games than The Cash Game Fix is for you.
+									li
+										| If you are sometimes uncertain what the most profitable decisions to make at the tables are than The Cash Game Fix is for you.
+								h2 WHAT DOES THE CASH GAME FIX INCLUDE?
+								ol
+									li
+										| The Cash Game Fix includes a complete 10 week online video course with 50+ hours of game changing content designed to plug your leaks, transform your game, and turn you into a profitable poker player.
+									li
+										| The Cash Game Fix also includes a 167 page course manual filled with ground breaking content specifically designed to take beginning and intermediate players to the next level.
+									li
+										| In addition The Cash Game Fix course includes 15+ hours of HD recorded live cash games with players hole cards. You will have the ability to know what everyone has at all times so you can test to see if your reads are correct. There is no better way to practice then on real recorded games.
+									li
+										| You will also have access to live monthly Q & A webinars run by Blake and his SOC Team of Coaches.
+
+
+							aside.sidebar
+								.img
+									<!--[if IE 9]><video style="display: none;"><![endif]-->
+									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x" media="(max-width: 767px)")
+									source(srcset="../images/img1.jpg" media="(max-width: 1024px)")
+									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x")
+									<!--[if IE 9]></video><![endif]-->
+									img(src="../images/cashgame/front-image.png" alt="image description")
+								.testimonials
+									blockquote
+										q
+											| I lost my “fit or fold” predictable image by learning the lessons in the Cash Game Fix by adjusting to the table instead of only playing my cards.  By not playing like a rock, I can extract a ton of value exploiting my opponents’ mistakes, projecting a much looser image.  This Loose Aggressive style often puts me in position to win or steal a lot of pots!
+										cite
+											span JENNIFER. F
+											|  - CASH GAME FIX PLAYER
+								.testimonials
+									blockquote
+										q
+											| The very first thing that struck me is when Blake stressed the importance of the "why?". Usually, in books or sites, authors just explain concepts without going deep into the "why" though it is essential because it's only when you really understand the why of  something that you can apply it correctly. If you follow the program as it is and put in hard work, it is guaranteed you will have results.
+										cite
+											span MIKE. F
+											|  - CASH GAME FIX PLAYER
+								.testimonials
+									blockquote
+										q
+											| I like that CGF provides the theory and math behind common scenarios and thought me how to think through them, as opposed to memorizing a bunch of hand charts and playing in autopilot.
+										cite
+											span MIKE. R
+											|  - CASH GAME FIX PLAYER
+						.form-block.add
+							.form-holder
+								.heading-text
+									h2 Take this quick test to determine what
+								p
+									| Enter your name and email below and we will notify you when it opens again in addition to giving you some free content on how to change your game.
+								button.main-button.red
+									a Take the assessment
+								small We will let you know when Cash Game Fix Opens
+
+					.twocolumns#tab2
+						.holder
+							article.content-block
+								h2 THE PREDICTIVE EDGE SUMMARY
+								p
+									| The Predictive Edge is a carefully constructed, 12 week online video program designed to teach you how to rapidly read your opponents hands, perfectly balance your aggression, exploit any opponent, and develop a consistently predictive thought process. The Predictive Edge is an comprehensive online workshop specifically designed to take you from good to great.
+								h2 WHO IS THIS CLASS DESIGNED FOR?
+								ol
+									li
+										| If you are tired of playing “Good” poker and want to make the change to “Great” poker The Predictive Edge is the course for you.
+									li
+										| If you have studied the game and are ready to take a step up to the next level of poker The Predictive Edge is the course for you.
+									li
+										| If you have trouble adding aggression to your game and have found your growth in the game slowing The Predictive Edge is the course for you.
+									li
+										| If you want to better understand how to systematically exploit the consistent mistakes your opponents are making at the tables The Predictive Edge is the course for you.
+									li
+										| If you are sometimes uncertain how to interpret your opponents actions and take advantage of their tendencies at the tables than The Predictive Edge is the course for you.
+								h2 WHAT DOES THE PREDICTIVE EDGE INCLUDE?
+								ol
+									li
+										| The Predictive Edge includes a complete 12 week online video course with 100’s of hours of game changing content designed to transform your game.
+									li
+										| Hundreds of Assignment - We have created hundreds of diverse assignments with thousands of questions to reinforce everything that we have spoken about.
+									li
+										| 16 hours of live game footage. With the use of our full HD live game footage you will have the ability to know what everyone has at all times so you can test to see if your reads are correct. There is no better way to practice then on real recorded games.
+									li
+										| In addition to The Predictive Edge course you will have unlimited access to The Professional Series Workshop. Before you play poker professionally there needs to be several questions answered. Are you good enough? Does your situation make it possible to play poker? Playing poker professionally is for a very small percentage of people. This workshop is designed to see if you are one of them.
+									li
+										| The Predictive Edge also includes a 400 page course manual filled with ground breaking content specifically designed to take intermediate level players and elevate them to elite level status.
+							aside.sidebar
+								.img
+									<!--[if IE 9]><video style="display: none;"><![endif]-->
+									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x" media="(max-width: 767px)")
+									source(srcset="../images/img1.jpg" media="(max-width: 1024px)")
+									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x")
+									<!--[if IE 9]></video><![endif]-->
+									img(src="../images/cashgame/front-image.png" alt="image description")
+								h2 THE PREDICTIVE EDGE CONTAINS HUNDREDS OF ASSIGNMENTS
+								.img
+									source(srcset="../images/course-assignment.jpg, ../images/course-assignment2x.jpg 2x")
+									img(src="../images/course-assignment.jpg" alt="image description")
+						.form-block.add
+							.form-holder
+								.heading-text
+									h2 Take this quick test to determine what
+								p
+									| Enter your name and email below and we will notify you when it opens again in addition to giving you some free content on how to change your game.
+								button.main-button.red
+									a Take the assessment
+								small We will let you know when Cash Game Fix Opens
+
+					.twocolumns#tab3
+						section.background-video.coming-soon-video: .main
+							img(src="../images/training.png", alt="")
+							h3 Read any Player, Give Off Nothing, Become Hyper Aware, & Psychologically manipulate your opponents
+							button Learn more
+
+
+
+		footer.page-footer
+
+			.social
+					a.icon-social-twitter(href="#")
+					a.icon-social-facebook(href="#")
+					a.icon-social-instagram(href="#")
+					a.icon-social-youtube(href="#")
+
+			ul.upper.navigation
+					li: a(href="#") Home
+					li: a(href="#") About
+					li: a(href="#") Getting Started
+					li: a(href="#") Blog/content
+					li: a(href="#") Strategy Sundays
+					li: a(href="#") The 8 Week Course
+					li: a(href="#") Login
+
+			ul.lower.navigation
+					li: a(href="#") Contact Us
+					li: a(href="#") Privacy Policy
+					li: a(href="#") Disclaimer
+
+
+		// jQuery 3.1.1
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="../js/jquery.main.js")
+
+		// Main JS
+		script(src="../js/main.js")
+
+		// Navigation.JS
+		script(src="../js/navigation.js")
+
+		// Jquery Easing
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
