@@ -2302,7 +2302,7 @@ section.main-page .container button.main-button {
   color: #fff;
   line-height: 1;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -1px;
 }
 
@@ -2329,7 +2329,7 @@ section.main-page .container button.main-button {
 
 .visual-button .main-button.white a {
   position: relative;
-  padding: 20px 15px;
+  padding: 15px;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -2386,8 +2386,9 @@ section.main-page .container button.main-button {
   display: block;
   color: #b7b7b7;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .tabset .txt {
@@ -2493,12 +2494,12 @@ section.main-page .container button.main-button {
 }
 
 .tab-content h2 {
+  margin: 0 0 16px -3px;
   color: #000;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 32px;
+  font-weight: 800;
   text-transform: uppercase;
-  margin: 0 0 17px -3px;
+  line-height: 1.78;
 }
 
 .tab-content p {
@@ -2506,10 +2507,9 @@ section.main-page .container button.main-button {
 }
 
 .tab-content ol {
-  padding: 0;
   list-style: none;
-  margin: 0;
-  padding: 0 0 34px;
+  margin: 35px 0;
+  padding: 0;
   color: #505050;
   font-size: 18px;
   font-weight: 500;
@@ -2518,7 +2518,7 @@ section.main-page .container button.main-button {
 }
 
 .tab-content ol:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tab-content ol li {
@@ -2560,7 +2560,7 @@ section.main-page .container button.main-button {
   text-shadow: 0 0 1px #f4f4f4;
   color: #000;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -.75px;
   line-height: 1.78;
 }
@@ -5941,6 +5941,7 @@ nav.menu-appear footer p {
     font-size: 50px;
   }
   .visual-button .main-button.white a {
+    padding: 18px 15px;
     font-size: 16px;
   }
 }
@@ -5971,7 +5972,7 @@ nav.menu-appear footer p {
   .tab-content .content-block {
     padding-right: 15px;
   }
-  .form-block h2 {
+  .tab-content .form-block h2 {
     font-size: 30px;
     line-height: 60px;
   }
@@ -5990,6 +5991,9 @@ nav.menu-appear footer p {
   }
   .visual-area h1 {
     font-size: 50px;
+  }
+  .visual-button .main-button.white a {
+    padding: 7px 15px !important;
   }
   .tabset {
     -webkit-flex-wrap: wrap;
@@ -6026,7 +6030,7 @@ nav.menu-appear footer p {
     line-height: 1.2;
   }
   .tab-content .form-block .main-button a {
-    padding: 15px 10px 15px !important;
+    padding: 10px !important;
   }
   .background-video .main {
     font-size: 18px;
