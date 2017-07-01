@@ -2548,9 +2548,9 @@ section.main-page .container button.main-button {
 }
 
 .tab-content .form-block {
-  max-width: 1180px;
+  max-width: 1190px;
   margin: 50px auto;
-  padding: 54px 10px 37px;
+  padding: 54px 15px 37px;
   overflow: hidden;
   border: 1px solid #f4f4f4;
   background: #fff;
