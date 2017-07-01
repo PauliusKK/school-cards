@@ -2309,7 +2309,7 @@ section.main-page .container button.main-button {
 .visual-area .left {
   float: left;
   width: 43%;
-  padding: 41px 40px 0 5px;
+  padding: 0 40px 0 5px;
 }
 
 .visual-area .img-right {
@@ -2321,6 +2321,10 @@ section.main-page .container button.main-button {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.visual-button {
+  margin-top: 43px;
 }
 
 .visual-button .main-button.white {
@@ -2438,9 +2442,14 @@ section.main-page .container button.main-button {
   margin-bottom: 65px;
 }
 
+.tab-content .sidebar .img.img_special-margin {
+  margin: 0 -150px 53px 0;
+}
+
 .tab-content .sidebar .img img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .tab-content .testimonials {
@@ -5935,7 +5944,7 @@ nav.menu-appear footer p {
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .visual-area .left {
     width: 48%;
-    padding: 20px 20px 0 0;
+    padding: 0 50px 0 0;
   }
   .visual-area h1 {
     font-size: 50px;
@@ -5944,6 +5953,9 @@ nav.menu-appear footer p {
     padding: 18px 15px;
     font-size: 16px;
   }
+  .tab-content .sidebar .img.img_special-margin {
+    margin-right: -25px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -5951,7 +5963,8 @@ nav.menu-appear footer p {
     padding: 120px 10px 89px;
   }
   .visual-area .left {
-    padding: 0 20px 0 0;
+    width: 48%;
+    padding: 0 30px 0 0;
   }
   .visual-area h1 {
     font-size: 50px;
@@ -5976,6 +5989,9 @@ nav.menu-appear footer p {
     font-size: 30px;
     line-height: 60px;
   }
+  .tab-content .sidebar .img.img_special-margin {
+    margin-right: -25px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5991,6 +6007,9 @@ nav.menu-appear footer p {
   }
   .visual-area h1 {
     font-size: 50px;
+  }
+  .visual-button[hidden] {
+    display: block;
   }
   .visual-button .main-button.white a {
     padding: 7px 15px !important;
@@ -6031,6 +6050,9 @@ nav.menu-appear footer p {
   }
   .tab-content .form-block .main-button a {
     padding: 10px !important;
+  }
+  .tab-content .sidebar .img.img_special-margin {
+    margin-right: 0;
   }
   .background-video .main {
     font-size: 18px;

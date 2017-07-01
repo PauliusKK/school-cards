@@ -46,13 +46,9 @@ html(lang='en-US')
 					.visual-button
 						button.main-button.white: a(href="#") TAKE THE POKER ASSESSMENT
 				.img-right
-					picture
-						<!--[if IE 9]><video style="display: none;"><![endif]-->
-						source(srcset="../images/img01.png, ../images/img01-2x.png 2x" media="(max-width: 767px)")
-						source(srcset="../images/img01.png" media="(max-width: 1024px)")
-						source(srcset="../images/img01.png, ../images/img01-2x.png 2x")
-						<!--[if IE 9]></video><![endif]-->
-						img(src="../images/img01.png" alt="image description")
+					.video: .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true" poster="../images/img01.png")
+					.visual-button(hidden)
+						button.main-button.white: a(href="#") TAKE THE POKER ASSESSMENT
 			.tab-area
 				ul.tabset
 					each val, index in [{ title: 'THE CASH GAME FIX', text: 'Beginner - Intermediate' }, { title: 'THE PREDICTIVE EDGE', text: 'Intermediate - Advanced' }, { title: 'BEYOND TELLS', text: 'Advanced' }]
@@ -98,12 +94,7 @@ html(lang='en-US')
 
 							aside.sidebar
 								.img
-									<!--[if IE 9]><video style="display: none;"><![endif]-->
-									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x" media="(max-width: 767px)")
-									source(srcset="../images/img1.jpg" media="(max-width: 1024px)")
-									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x")
-									<!--[if IE 9]></video><![endif]-->
-									img(src="../images/cashgame/front-image.png" alt="image description")
+									img(src="../images/cashgame/front-image.png" width="739" height="500" alt="image description")
 								.testimonials
 									blockquote
 										q
@@ -166,13 +157,8 @@ html(lang='en-US')
 									li
 										| The Predictive Edge also includes a 400 page course manual filled with ground breaking content specifically designed to take intermediate level players and elevate them to elite level status.
 							aside.sidebar
-								.img
-									<!--[if IE 9]><video style="display: none;"><![endif]-->
-									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x" media="(max-width: 767px)")
-									source(srcset="../images/img1.jpg" media="(max-width: 1024px)")
-									source(srcset="../images/img1.jpg, ../images/img1-2x.jpg 2x")
-									<!--[if IE 9]></video><![endif]-->
-									img(src="../images/cashgame/front-image.png" alt="image description")
+								.img.img_special-margin
+									img(src="../images/group.png" width="720" height="432" alt="image description")
 								h2 THE PREDICTIVE EDGE CONTAINS HUNDREDS OF ASSIGNMENTS
 								.img
 									source(srcset="../images/course-assignment.jpg, ../images/course-assignment2x.jpg 2x")
@@ -230,3 +216,7 @@ html(lang='en-US')
 
 		// Jquery Easing
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+
+		// Scripts for video
+		script(src="//fast.wistia.com/embed/medias/jxv4no0s6w.jsonp" async)
+		script(src="//fast.wistia.com/assets/external/E-v1.js" async)
