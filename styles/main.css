@@ -2353,7 +2353,7 @@ section.main-page .container button.main-button {
 }
 
 .tab-area {
-  padding-top: 38px;
+  padding-top: 36px;
 }
 
 .tabset {
@@ -2379,10 +2379,6 @@ section.main-page .container button.main-button {
   border-top: 1px solid #e3e3e3;
   margin: 0 -9999px;
   padding: 0 9999px;
-}
-
-.tabset li {
-  padding: 0 0 12px;
 }
 
 .tabset li a {
@@ -6043,6 +6039,7 @@ nav.menu-appear footer p {
   }
   .tabset li {
     width: 100%;
+    padding-bottom: 12px;
   }
   .tabset .title {
     font-size: 18px;
