@@ -19,6 +19,11 @@ mixin bonus(left, right)
         h3 #{left}
         h4 #{right}
 
+mixin bonus-army(left, right)
+    .bonus.army
+        h3 #{left}
+        h4 #{right}
+
 mixin phase-card(strong, normal, imgsrc)
     .card
         - imgsrc = typeof imgsrc != "undefined" ? imgsrc : '../images/phases/graph.png'
@@ -107,3 +112,6 @@ mixin faq-question(strong, normal)
     .question
         h4 #{strong}
         p #{normal}
+
+mixin step-li(strong, normal)
+    li <strong>#{strong}</strong> #{normal}

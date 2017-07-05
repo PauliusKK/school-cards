@@ -12,17 +12,22 @@ $Roboto: 'Roboto', sans-serif
 
 // --- START of PAGES
 
-// SALES PAGES --- CASH GAME FIX --- PREDICTIVE EDGE
+// SALES PAGES --- CASH GAME FIX --- PREDICTIVE EDGE -- POKER BOOTCAMP
 @import "pages/sale/black-bar"
 @import "pages/sale/header"
+@import "pages/sale/reasons-texted"
+@import "pages/sale/about-bootcamp"
 @import "pages/sale/develop"
 @import "pages/sale/phase"
+@import "pages/sale/spots"
 @import "pages/sale/pitch"
+@import "pages/sale/steps"
 @import "pages/sale/teaching"
 @import "pages/sale/assignments"
 @import "pages/sale/facebook-feed"
 @import "pages/sale/money-back"
 @import "pages/sale/breakdowns"
+@import "pages/sale/bootcamp-work"
 @import "pages/sale/plans"
 @import "pages/sale/faq"
 @import "pages/sale/miscellaneous"
@@ -72,6 +77,9 @@ $Roboto: 'Roboto', sans-serif
 
 // /series/ PAGES in schoolofcards.com/admin
 @import "pages/-series/main"
+
+// /workshop/ PAGES in schoolofcards.com/admin
+@import "pages/-workshop/main"
 
 // END of PAGES ---
 
@@ -157,12 +165,35 @@ $Roboto: 'Roboto', sans-serif
 @import "responsiveness/pages/sales/teaching/screen-mobile"
 
 // DEVELOP SECTIONS
+@import "responsiveness/pages/sales/develop/screen-medium"
 @import "responsiveness/pages/sales/develop/screen-small"
 @import "responsiveness/pages/sales/develop/screen-mobile"
 
 // FACEBOOK-FEED SECTIONS
 @import "responsiveness/pages/sales/facebook-feed/screen-small"
 @import "responsiveness/pages/sales/facebook-feed/screen-mobile"
+
+// STEPS SECTION
+@import "responsiveness/pages/sales/steps/screen-medium"
+@import "responsiveness/pages/sales/steps/screen-small"
+@import "responsiveness/pages/sales/steps/screen-mobile"
+
+// SPOTS SECTION
+@import "responsiveness/pages/sales/spots/screen-medium"
+@import "responsiveness/pages/sales/spots/screen-small"
+@import "responsiveness/pages/sales/spots/screen-mobile"
+
+// BOOTCAMP-WORK SECTION
+@import "responsiveness/pages/sales/bootcamp-work/screen-small"
+@import "responsiveness/pages/sales/bootcamp-work/screen-mobile"
+
+// ABOUT-BOOTCAMP SECTION
+@import "responsiveness/pages/sales/about-bootcamp/screen-small"
+@import "responsiveness/pages/sales/about-bootcamp/screen-mobile"
+
+// REASONS-TEXTED SECTION
+@import "responsiveness/pages/sales/reasons-texted/screen-small"
+@import "responsiveness/pages/sales/reasons-texted/screen-mobile"
 
 // --------------------------- END of SALES PAGE --------------------------- \\
 
@@ -346,87 +377,3 @@ span.main-button-span
     border: 1px solid #f7f7f7
     padding: 45px 60px
     background-color: white
-
-    &.workshop
-        padding: 0
-        padding-top: 40px
-
-        h2
-            font-size: 40px
-            line-height: 1
-            font-weight: 800
-            color: #333
-            margin: 0
-            margin-left: 50px
-
-        p
-            letter-spacing: 0.3px
-            line-height: 1.25
-            font-size: 20px
-            color: #797979
-            font-weight: 500
-            padding-top: 5px
-            margin-bottom: 25px
-            margin-left: 50px
-
-        span.main-button-span
-            margin-bottom: 25px
-
-        iframe
-            padding: 0 60px
-            padding-bottom: 25px
-
-        .description
-            padding: 25px 60px
-
-            p
-                margin-left: 0
-
-            strong
-                text-transform: uppercase
-                font-size: 20px
-                font-weight: 600
-
-            ol
-                margin-left: 16px
-                margin-top: 5px
-
-                li
-                    font-size: 20px
-                    color: #797979
-                    font-weight: 500
-                    padding-left: 3px
-
-    &.two-buttons.workshop
-
-        .buttons-container
-            text-align: center
-
-            button.main-button
-                display: inline-block
-
-                &:nth-child(2)
-                    margin-left: 15px
-
-                a
-                    padding: 10px 35px
-
-
-@media screen and (min-width: 768px) and (max-width: 991px)
-    p.common-edge-bigger-p
-        font-size: 18px !important
-        padding: 0 15px !important
-
-    h2.common-edge-h2
-        font-size: 34px !important
-        padding: 0 15px !important
-
-@media screen and (max-width: 767px)
-    p.common-edge-bigger-p
-        font-size: 16px !important
-        padding: 0 25px !important
-
-    h2.common-edge-h2
-        font-size: 18px !important
-        padding: 0 15px !important
-        font-weight: 700
