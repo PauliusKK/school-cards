@@ -2317,10 +2317,10 @@ section.main-page .container button.main-button {
   width: 54%;
 }
 
-.visual-area .img-right img {
+.visual-area img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .visual-button {
@@ -2621,7 +2621,7 @@ section.main-page .container button.main-button {
   text-align: center;
 }
 
-.background-video .main h3 {
+.background-video h3 {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -2634,7 +2634,7 @@ section.main-page .container button.main-button {
   margin-bottom: 30px;
 }
 
-.background-video .main p {
+.background-video p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -2646,7 +2646,7 @@ section.main-page .container button.main-button {
   margin-top: -5px;
 }
 
-.background-video .main img {
+.background-video img {
   max-width: 100%;
   display: block;
 }
@@ -6070,7 +6070,7 @@ nav.menu-appear footer p {
   .tab-content .form-block .main-button a {
     padding: 10px !important;
   }
-  .tab-content .sidebar .img.img_special-margin {
+  .tab-content .form-block .sidebar .img.img_special-margin {
     margin-right: 0;
   }
   .background-video {

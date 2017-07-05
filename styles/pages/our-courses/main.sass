@@ -1,336 +1,332 @@
 =clr
-	content: ""
-	display: block
-	clear: both
+    content: ""
+    display: block
+    clear: both
 
 .wrapper
-	overflow: hidden
+    overflow: hidden
 
 .visual-area
-	position: relative
-	z-index: 2
-	padding: 120px 15px 89px
-	max-width: 1190px
-	margin: 0 auto
-	font-size: 22px
-	font-weight: 300
-	color: #fff
-	line-height: 1.23
-	&:before,
-	&:after
-		content: ""
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		width: 9999px
-		height: 100%
-		z-index: -1
-		background: #ce3232
-		margin: 0 -9999px
-		padding: 0 9999px
-	&:after
-		display: block
-		clear: both
+    position: relative
+    z-index: 2
+    padding: 120px 15px 89px
+    max-width: 1190px
+    margin: 0 auto
+    font-size: 22px
+    font-weight: 300
+    color: #fff
+    line-height: 1.23
+    &:before,
+    &:after
+        content: ""
+    &:before
+        position: absolute
+        top: 0
+        left: 0
+        width: 9999px
+        height: 100%
+        z-index: -1
+        background: #ce3232
+        margin: 0 -9999px
+        padding: 0 9999px
+    &:after
+        display: block
+        clear: both
 
-	h1
-		margin: 0 0 15px -4px
-		color: #fff
-		line-height: 1
-		font-size: 80px
-		font-weight: 800
-		letter-spacing: -1px
+    h1
+        margin: 0 0 15px -4px
+        color: #fff
+        line-height: 1
+        font-size: 80px
+        font-weight: 800
+        letter-spacing: -1px
 
-	.left
-		float: left
-		width: 46%
-		padding: 0 77px 0 5px
+    .left
+        float: left
+        width: 46%
+        padding: 0 77px 0 5px
 
-	.img-right
-		float: right
-		width: 54%
-		img
-			width: 100%
-			height: auto
-			display: block
+    .img-right
+        float: right
+        width: 54%
+    img
+        display: block
+        width: 100%
+        height: auto
 
 
 .visual-button
-	margin-top: 43px
-	.main-button.white
-		width: 100%
-		a
-			position: relative
-			padding: 15px
-			font-size: 20px
-			margin-bottom: 0
+    margin-top: 43px
+    .main-button.white
+        width: 100%
+        a
+            position: relative
+            padding: 15px
+            font-size: 20px
+            margin-bottom: 0
 
 
 .visual-video
-	position: relative
-	&:before
-		content: ""
-		position: absolute
-		top: 0
-		left: 2px
-		right: 2px
-		bottom: 0
-		box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.5)
+    position: relative
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 2px
+        right: 2px
+        bottom: 0
+        box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.5)
 
 
 // first and second tab
 .tab-area
-	padding-top: 36px
+    padding-top: 36px
 
 
 .tabset
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-justify-content: space-between
-	justify-content: space-between
-	list-style: none
-	position: relative
-	padding: 0 15px 28px
-	max-width: 1190px
-	margin: 0 auto 70px
-	&:before
-		position: absolute
-		top: 100%
-		left: 0
-		content: ""
-		width: 9999px
-		border-top: 1px solid #e3e3e3
-		margin: 0 -9999px
-		padding: 0 9999px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    list-style: none
+    position: relative
+    padding: 0 15px 28px
+    max-width: 1190px
+    margin: 0 auto 70px
+    &:before
+        position: absolute
+        top: 100%
+        left: 0
+        content: ""
+        width: 9999px
+        border-top: 1px solid #e3e3e3
+        margin: 0 -9999px
+        padding: 0 9999px
 
-	li
-		a
-			display: inline-block
-			vertical-align: top
-			text-decoration: none
-			text-align: left
-			&.active
-				.title
-					color: #000
-				.txt
-					color: #4f4f4f
+    li
+        a
+            display: inline-block
+            vertical-align: top
+            text-decoration: none
+            text-align: left
+            &.active
+                .title
+                    color: #000
+                .txt
+                    color: #4f4f4f
 
-	.title
-		display: block
-		color: #b7b7b7
-		font-size: 22px
-		font-weight: 800
-		text-transform: uppercase
-		line-height: 1.2
+    .title
+        display: block
+        color: #b7b7b7
+        font-size: 22px
+        font-weight: 800
+        text-transform: uppercase
+        line-height: 1.2
 
-	.txt
-		display: block
-		color: #b7b7b7
-		font-size: 16px
-		font-weight: 300
-		padding: 0 0 0 3px
+    .txt
+        display: block
+        color: #b7b7b7
+        font-size: 16px
+        font-weight: 300
+        padding: 0 0 0 3px
 
 
 .tab-content
-	position: relative
+    position: relative
 
-	.holder
-		max-width: 1190px
-		margin: 0 auto
-		padding: 0 15px
-		&:after
-			+clr
+    .holder
+        max-width: 1190px
+        margin: 0 auto
+        padding: 0 15px
+        &:after
+            +clr
 
-	.twocolumns
-		position: relative
-		color: #505050
-		font-size: 18px
-		font-weight: 500
-		line-height: 27px
+    .twocolumns
+        position: relative
+        color: #505050
+        font-size: 18px
+        font-weight: 500
+        line-height: 27px
 
-	.content-block
-		width: 50%
-		float: left
-		padding-right: 52px
+    .content-block
+        width: 50%
+        float: left
+        padding-right: 52px
 
-	.sidebar
-		float: right
-		width: 50%
-		padding: 4px 0 0 18px
-		.img
-			margin-bottom: 65px
-			&.img_special-margin
-				margin: 0 -125px 53px 0
-			img
-				display: block
-				max-width: 100%
-				height: auto
+    .sidebar
+        float: right
+        width: 50%
+        padding: 4px 0 0 18px
+        .img
+            margin-bottom: 65px
+            &.img_special-margin
+                margin: 0 -125px 53px 0
+            img
+                display: block
+                max-width: 100%
+                height: auto
 
-	.testimonials
-		position: relative
-		margin-bottom: 42px
-		background: rgba(#eee, 0.31)
-		color: #000
-		line-height: 1.39
-		&:before,
-		&:after
-			content: ""
-			position: absolute
-			width: 36px
-			height: 29px
-			background: url(../images/quote.png) 0 0 no-repeat
-			z-index: -1
-		&:before
-			top: 24px
-			left: 29px
-		&:after
-			right: 26px
-			bottom: 40px
-		&:last-child
-			padding-bottom: 0
-		blockquote
-			padding: 50px 26px 27px 35px
-			border-left: none
-			font-size: 18px
-			font-weight: 500
-		cite
-			display: block
-			margin-top: 10px
-			text-transform: uppercase
-			font-size: 14px
-			font-style: normal
-			span
-				font-weight: 800
+    .testimonials
+        position: relative
+        margin-bottom: 42px
+        background: rgba(#eee, 0.31)
+        color: #000
+        line-height: 1.39
+        &:before,
+        &:after
+            content: ""
+            position: absolute
+            width: 36px
+            height: 29px
+            background: url(../images/quote.png) 0 0 no-repeat
+            z-index: -1
+        &:before
+            top: 24px
+            left: 29px
+        &:after
+            right: 26px
+            bottom: 40px
+        &:last-child
+            padding-bottom: 0
+        blockquote
+            padding: 50px 26px 27px 35px
+            border-left: none
+            font-size: 18px
+            font-weight: 500
+        cite
+            display: block
+            margin-top: 10px
+            text-transform: uppercase
+            font-size: 14px
+            font-style: normal
+            span
+                font-weight: 800
+    h2
+        margin: 0 0 16px -3px
+        color: #000
+        font-size: 18px
+        font-weight: 800
+        text-transform: uppercase
+        line-height: 1.78
+    p
+        margin: 0 0 31px
 
-	h2
-		margin: 0 0 16px -3px
-		color: #000
-		font-size: 18px
-		font-weight: 800
-		text-transform: uppercase
-		line-height: 1.78
+    ol
+        list-style: none
+        margin: 35px 0
+        padding: 0
+        color: #505050
+        font-size: 18px
+        font-weight: 500
+        line-height: 27px
+        counter-reset: increment
+        &:last-child
+            margin-bottom: 0
+        li
+            padding: 0 0 15px 33px
+            position: relative
+            &:last-child
+                padding-bottom: 0
+            &:before
+                position: absolute
+                top: 0
+                left: 8px
+                counter-increment: increment
+                content: counter(increment) "."
 
-	p
-		margin: 0 0 31px
 
-	ol
-		list-style: none
-		margin: 35px 0
-		padding: 0
-		color: #505050
-		font-size: 18px
-		font-weight: 500
-		line-height: 27px
-		counter-reset: increment
-		&:last-child
-			margin-bottom: 0
-		li
-			padding: 0 0 15px 33px
-			position: relative
-			&:last-child
-				padding-bottom: 0
-			&:before
-				position: absolute
-				top: 0
-				left: 8px
-				counter-increment: increment
-				content: counter(increment) "."
-
-	// test form
-	.form-block
-		max-width: 1190px
-		margin: 50px auto
-		padding: 54px 15px 37px
-		overflow: hidden
-		border: 1px solid #f4f4f4
-		background: #fff
-		text-align: center
-		.form-holder
-			max-width: 805px
-			padding: 0 10px
-			margin: 0 auto
-		h2
-			margin-bottom: 0
-			text-transform: none
-			text-shadow: 0 0 1px #f4f4f4
-			color: #000
-			font-size: 45px
-			font-weight: 800
-			letter-spacing: -.75px
-			line-height: 1.78
-		small
-			display: block
-			margin-top: 17px
-			font-size: 16px
-			color: #505050
+    // test form
+    .form-block
+        max-width: 1190px
+        margin: 50px auto
+        padding: 54px 15px 37px
+        overflow: hidden
+        border: 1px solid #f4f4f4
+        background: #fff
+        text-align: center
+        .form-holder
+            max-width: 805px
+            padding: 0 10px
+            margin: 0 auto
+        h2
+            margin-bottom: 0
+            text-transform: none
+            text-shadow: 0 0 1px #f4f4f4
+            color: #000
+            font-size: 45px
+            font-weight: 800
+            letter-spacing: -.75px
+            line-height: 1.78
+        small
+            display: block
+            margin-top: 17px
+            font-size: 16px
+            color: #505050
 
 
 .js-tab-hidden
-	display: none
+    display: none
 
 
 // third tab
 .background-video
-	background: linear-gradient(0deg, rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("http://uploads.webflow.com/58c80ad0cae5d26223d71eaa/58c80b0eb12a6eb630b41547_Bitmap.png") no-repeat
-	background-size: cover
-	min-height: 840px
-	display: -webkit-flex
-	display: -ms-flexbox
-	display: flex
-	-webkit-align-items: center
-	-ms-flex-align: center
-	align-items: center
-	-webkit-justify-content: center
-	-ms-flex-pack: center
-	justify-content: center
-	-webkit-flex-direction: column
-	-ms-flex-direction: column
-	flex-direction: column
-	margin: -70px -10px 0
-	.main
-		max-width: 100%
-		padding: 0 25px
-		text-align: center
-		h3
-			font-family: $Roboto
-			font-size: 22px
-			font-weight: 300
-			line-height: 1.23
-			color: #d0d0d0
-			max-width: 525px
-			display: block
-			margin: 0 auto
-			margin-top: 15px
-			margin-bottom: 30px
-		p
-			font-family: $Roboto
-			font-size: 20px
-			font-weight: 300
-			font-style: normal
-			font-stretch: normal
-			line-height: 3.15
-			letter-spacing: normal
-			color: #525252
-			margin-top: -5px
-		img
-			max-width: 100%
-			display: block
-	button
-		border: none
-		background-color: rgba(0, 0, 0, 0.5)
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-		height: 65px
-		line-height: 65px
-		color: white
-		text-transform: uppercase
-		font-size: 18px
-		font-family: $RobotoMono
-		letter-spacing: 2.9px
-		padding: 0 45px
-		transition: all 0.15s linear
-		&:hover
-			background-color: rgba(0, 0, 0, 0.65)
-
-
-
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("http://uploads.webflow.com/58c80ad0cae5d26223d71eaa/58c80b0eb12a6eb630b41547_Bitmap.png") no-repeat
+    background-size: cover
+    min-height: 840px
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    margin: -70px -10px 0
+    .main
+        max-width: 100%
+        padding: 0 25px
+        text-align: center
+    h3
+        font-family: $Roboto
+        font-size: 22px
+        font-weight: 300
+        line-height: 1.23
+        color: #d0d0d0
+        max-width: 525px
+        display: block
+        margin: 0 auto
+        margin-top: 15px
+        margin-bottom: 30px
+    p
+        font-family: $Roboto
+        font-size: 20px
+        font-weight: 300
+        font-style: normal
+        font-stretch: normal
+        line-height: 3.15
+        letter-spacing: normal
+        color: #525252
+        margin-top: -5px
+    img
+        max-width: 100%
+        display: block
+    button
+        border: none
+        background-color: rgba(0, 0, 0, 0.5)
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+        height: 65px
+        line-height: 65px
+        color: white
+        text-transform: uppercase
+        font-size: 18px
+        font-family: $RobotoMono
+        letter-spacing: 2.9px
+        padding: 0 45px
+        transition: all 0.15s linear
+        &:hover
+            background-color: rgba(0, 0, 0, 0.65)
