@@ -2892,10 +2892,10 @@ section.main-page .container button.main-button {
   width: 54%;
 }
 
-.visual-area .img-right img {
+.visual-area img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .visual-button {
@@ -3172,7 +3172,7 @@ section.main-page .container button.main-button {
 }
 
 .background-video {
-  background: linear-gradient(0deg, rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url(../images/training-bitmap.png) no-repeat;
+  background: linear-gradient(0deg, rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("http://uploads.webflow.com/58c80ad0cae5d26223d71eaa/58c80b0eb12a6eb630b41547_Bitmap.png") no-repeat;
   background-size: cover;
   min-height: 840px;
   display: -webkit-flex;
@@ -3196,7 +3196,7 @@ section.main-page .container button.main-button {
   text-align: center;
 }
 
-.background-video .main h3 {
+.background-video h3 {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -3209,7 +3209,7 @@ section.main-page .container button.main-button {
   margin-bottom: 30px;
 }
 
-.background-video .main p {
+.background-video p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -3221,7 +3221,7 @@ section.main-page .container button.main-button {
   margin-top: -5px;
 }
 
-.background-video .main img {
+.background-video img {
   max-width: 100%;
   display: block;
 }
